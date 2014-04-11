@@ -18,7 +18,7 @@ public class controller : MonoBehaviour {
 	// Update is called once per frame
 	protected void UpdateInput () {
 
-		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), Input.GetAxis ("VerticalLeft" + JoyStickNum.ToString()), 0 );
+		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), 0, 0 );
 		Vector3 aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
