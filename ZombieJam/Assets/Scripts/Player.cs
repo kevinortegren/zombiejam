@@ -45,7 +45,7 @@ public class Player : controller {
 		{
 		case JOYSTICKBUTTON.JUMP: 
 		{
-			GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
 			break;
 		}
 		case JOYSTICKBUTTON.FIRE: 
