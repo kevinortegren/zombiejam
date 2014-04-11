@@ -16,18 +16,6 @@ public class Player : controller {
 	// Update is called once per frame
 	void Update () {
 	
-		// Temp movement.
-		if(Input.GetKey(KeyCode.RightArrow))
-			GetComponent<CharacterController>().Move(new Vector3(1,0,0) * 0.1f);
-		else if(Input.GetKey(KeyCode.LeftArrow))
-			GetComponent<CharacterController>().Move(-Vector3.right * 0.1f);
-		
-		// Shoot logic.
-		if(Input.GetKey(KeyCode.Space))
-		{
-			Shoot();
-		}
-		
 		// Level bounds check.
 		Vector3 position = transform.position;
 		if(position.x < Level.LevelWidth && position.x > 0 
@@ -64,7 +52,7 @@ public class Player : controller {
 	
 		if(Time.time >= timeWhenFired + weapon.cooldown)
 		{
-			weapon.Fire(transform.position);		
+			weapon.Fire(transform.position, new Vector2(-1, 0));		
 			timeWhenFired = Time.time;
 		}
 	}
