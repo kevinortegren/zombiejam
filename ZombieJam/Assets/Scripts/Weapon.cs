@@ -10,5 +10,5 @@ public class Weapon : MonoBehaviour {
 		this.cooldown = cooldown;
 	}
 	
-	public virtual void Fire(Vector2 playerPosition) {}
+	public virtual void Fire(Vector2 playerPosition, Vector2 direction) {}
 }
