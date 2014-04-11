@@ -3,7 +3,7 @@ using System.Collections;
 
 public class controller : MonoBehaviour {
 
-	public int JoyStickNum;
+	public int JoyStickNum = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -13,40 +13,20 @@ public class controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Vector3 deltaPos = new Vector3(0,0,0);
+		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), Input.GetAxis ("VerticalLeft" + JoyStickNum.ToString()), 0 );
+		Vector3 aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 
-		switch (JoyStickNum) {
-			case 1:
-			{
-				deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft1"), Input.GetAxis ("VerticalLeft1"), 0 );
-				break;
-			}
-			case 2:
-			{
-				deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft2"), Input.GetAxis ("VerticalLeft2"), 0 );
-				break;
-			}
-			case 3:
-			{
-				deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft3"), Input.GetAxis ("VerticalLeft3"), 0 );
-				break;
-			}
-			case 4:
-			{
-				deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft4"), Input.GetAxis ("VerticalLeft4"), 0 );
-				break;
-			}
-			default:
-				break;
-
-		}
-
-		if (Input.GetButtonDown ("Jump")) 
+		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
 		{
-			print("button Working");		
+			GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
 		}
 
-		GetComponent<CharacterController> ().Move (deltaPos); 
+		if (Input.GetButtonDown ("Fire" + JoyStickNum.ToString())) 
+		{
+			print ("Fire!");
+		}
+
+		transform.position += deltaPos; 
 
 	}
 }
