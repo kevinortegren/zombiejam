@@ -5,7 +5,7 @@ public class Blaster : Weapon {
 
 	public GameObject bullet;
 
-	public Blaster() : base(0.4f)
+	public Blaster() : base(0.2f)
 	{
 		
 	}

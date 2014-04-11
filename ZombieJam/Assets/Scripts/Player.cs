@@ -4,8 +4,17 @@ using System;
 
 public class Player : controller {
 
-	private float timeWhenFired = 0.0f;
+	enum PLAYERSTATE
+	{
+		AIR,
+		GROUND
+	}
+
 	public GameObject activeWeapon;
+
+	private float timeWhenFired = 0.0f;
+	private Vector3 latestAimingDirection = Vector3.right;
+	private PLAYERSTATE state = PLAYERSTATE.GROUND;
 
 	// Use this for initialization
 	void Start () {
@@ -27,13 +36,21 @@ public class Player : controller {
 		base.UpdateInput ();
 	}
 
+	void OnCollisionEnter2D(Collision2D hit)
+	{
+		if(hit.gameObject.tag == "Ground")
+		{
+			state = PLAYERSTATE.GROUND;
+		}
+	}
+
 	protected override void ProcessInput(JOYSTICKBUTTON button)
 	{
 		switch(button)
 		{
 		case JOYSTICKBUTTON.JUMP: 
 		{
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
+			Jump();
 			break;
 		}
 		case JOYSTICKBUTTON.FIRE: 
@@ -46,13 +63,27 @@ public class Player : controller {
 		}
 	}
 
+	void Jump()
+	{
+		if(state == PLAYERSTATE.GROUND)
+		{
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
+			state = PLAYERSTATE.AIR;
+		}
+	}
+
 	void Shoot()
 	{
 		Weapon weapon = activeWeapon.GetComponent<Weapon>();
 	
 		if(Time.time >= timeWhenFired + weapon.cooldown)
 		{
-			weapon.Fire(transform.position, new Vector2(-1, 0));		
+			// If the controller has an aiming direction.
+			if(aimVec != Vector3.zero)
+				latestAimingDirection = aimVec;		
+				
+		
+			weapon.Fire(transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}

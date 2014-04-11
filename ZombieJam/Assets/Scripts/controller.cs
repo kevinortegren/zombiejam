@@ -10,6 +10,8 @@ public class controller : MonoBehaviour {
 	}
 	public int JoyStickNum = 0;
 
+	protected Vector3 aimVec;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -18,8 +20,10 @@ public class controller : MonoBehaviour {
 	// Update is called once per frame
 	protected void UpdateInput () {
 
-		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), Input.GetAxis ("VerticalLeft" + JoyStickNum.ToString()), 0 );
-		Vector3 aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
+		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), 0, 0 );
+		aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
+		aimVec = Vector3.Normalize(aimVec);
+		
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
 		{
@@ -32,7 +36,6 @@ public class controller : MonoBehaviour {
 		}
 
 		transform.position += deltaPos; 
-
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
