@@ -6,9 +6,16 @@ public class controller : MonoBehaviour {
 	protected enum JOYSTICKBUTTON
 	{
 		FIRE,
-		JUMP
+		JUMP,
+	}
+	protected enum STATE
+	{
+		MOVINGLEFT,
+		MOVINGRIGHT,
+		IDLESTATE
 	}
 	public int JoyStickNum = 0;
+	protected STATE previousState = STATE.MOVINGRIGHT;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +27,19 @@ public class controller : MonoBehaviour {
 
 		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), Input.GetAxis ("VerticalLeft" + JoyStickNum.ToString()), 0 );
 		Vector3 aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
+
+		if (deltaPos.x > 0) 
+		{
+			ProcessState (STATE.MOVINGRIGHT);
+		} 
+		else if (deltaPos.x < 0) 
+		{
+			ProcessState (STATE.MOVINGLEFT);
+		} 
+		else 
+		{
+			ProcessState (STATE.IDLESTATE);
+		}
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
 		{
@@ -36,4 +56,7 @@ public class controller : MonoBehaviour {
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
+
+	protected virtual void ProcessState(STATE State) 
+	{}
 }
