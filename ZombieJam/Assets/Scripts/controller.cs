@@ -3,6 +3,11 @@ using System.Collections;
 
 public class controller : MonoBehaviour {
 
+	protected enum JOYSTICKBUTTON
+	{
+		FIRE,
+		JUMP
+	}
 	public int JoyStickNum = 0;
 
 	// Use this for initialization
@@ -11,22 +16,24 @@ public class controller : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected void UpdateInput () {
 
 		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), Input.GetAxis ("VerticalLeft" + JoyStickNum.ToString()), 0 );
 		Vector3 aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
 		{
-			GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
+			ProcessInput(JOYSTICKBUTTON.JUMP);
 		}
 
 		if (Input.GetButtonDown ("Fire" + JoyStickNum.ToString())) 
 		{
-			print ("Fire!");
+			ProcessInput(JOYSTICKBUTTON.FIRE);
 		}
 
 		transform.position += deltaPos; 
 
 	}
+
+	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
 }

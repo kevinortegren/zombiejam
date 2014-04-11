@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Player : MonoBehaviour {
+public class Player : controller {
 
 	private float timeWhenFired = 0.0f;
 	public GameObject activeWeapon;
@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+
 	}
 	
 	// Update is called once per frame
@@ -34,8 +35,29 @@ public class Player : MonoBehaviour {
 		{
 				
 		}
+
+		base.UpdateInput ();
 	}
-	
+
+	protected override void ProcessInput(JOYSTICKBUTTON button)
+	{
+		switch(button)
+		{
+		case JOYSTICKBUTTON.JUMP: 
+		{
+			GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
+			break;
+		}
+		case JOYSTICKBUTTON.FIRE: 
+		{
+			Shoot();
+			break;
+		}
+		default:
+			break;
+		}
+	}
+
 	void Shoot()
 	{
 		Weapon weapon = activeWeapon.GetComponent<Weapon>();
