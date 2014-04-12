@@ -10,7 +10,7 @@ public class Player : controller {
 		GROUND
 	}
 
-    enum QUESTIONSTATE
+    public enum QUESTIONSTATE
     {
         NONE,
         INTRO,
@@ -28,7 +28,7 @@ public class Player : controller {
 
     private int score = 0;
 
-    private QUESTIONSTATE qstate = QUESTIONSTATE.NONE;
+    public QUESTIONSTATE qstate = QUESTIONSTATE.NONE;
 
     private GameObject currentQZone;
 
@@ -71,11 +71,11 @@ public class Player : controller {
                 introTime = 0.0f;
             }
         }
-        if (qstate == QUESTIONSTATE.INPUT)
+        else if (qstate == QUESTIONSTATE.INPUT)
         {
             base.UpdateQuestionInput();
         }
-        else
+        else if(qstate == QUESTIONSTATE.NONE)
         {
             base.UpdateInput();
 
@@ -164,7 +164,7 @@ public class Player : controller {
     {
         if (qstate == QUESTIONSTATE.WAITING)
         {
-            //qstate = QUESTIONSTATE.NONE;
+            qstate = QUESTIONSTATE.NONE;
         }
     }
 
@@ -246,12 +246,16 @@ public class Player : controller {
     {
         if (other.gameObject.tag == "QuestionZones")
         {
-            if (qstate == QUESTIONSTATE.NONE)
+            if (!other.gameObject.GetComponent<QuestionZone>().used)
             {
-                currentQZone = other.gameObject;
+                if (qstate == QUESTIONSTATE.NONE)
+                {
+                    currentQZone = other.gameObject;
 
-                print("Enter zone.");
-                qstate = QUESTIONSTATE.INTRO;
+                    currentQZone.GetComponent<QuestionZone>().inited = true;
+                    
+                    qstate = QUESTIONSTATE.WAITING;
+                }
             }
         }
     }
