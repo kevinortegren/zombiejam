@@ -4,7 +4,7 @@
 TagManager:
   tags:
   - Ground
-  - 
+  - DamageReceiver
   - 
   - 
   - 
@@ -12,6 +12,8 @@ TagManager:
   - Floor
   - Arm
   - Hand
+  - 
+  - Enemy
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
