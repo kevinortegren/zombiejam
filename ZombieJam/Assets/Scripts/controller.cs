@@ -32,7 +32,7 @@ public class controller : MonoBehaviour {
 
     protected void UpdateQuestionInput()
     {
-        if (Input.GetButtonDown("Jump" + JoyStickNum.ToString()))
+        if (Input.GetButtonDown("LB" + JoyStickNum.ToString()))
         {
             ProcessQuestionInput(JOYSTICKBUTTON.JUMP);
         }

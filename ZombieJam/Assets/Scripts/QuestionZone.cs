@@ -12,12 +12,22 @@ public class QuestionZone : MonoBehaviour {
 
     public bool used = false;
     public bool inited = false;
+    public bool intro = false;
+    public bool outro = false;
 
     TextMesh questionTM;
     TextMesh answer1TM;
     TextMesh answer2TM;
     TextMesh introTM;
     TextMesh waitingTM;
+    TextMesh lbTM;
+    TextMesh rbTM;
+    TextMesh countdownTM;
+
+    private float time = 0.0f;
+
+    public GameObject win;
+    public GameObject loose;
 
     // Use this for initialization
     void Start() {
@@ -39,11 +49,18 @@ public class QuestionZone : MonoBehaviour {
                 introTM = txm;
             else if (txm.name == "Waiting")
                 waitingTM = txm;
+            else if (txm.name == "Countdown")
+                countdownTM = txm;
+            else if (txm.name == "LB")
+                lbTM = txm;
+            else if (txm.name == "RB")
+                rbTM = txm;
         }
 
         ShowQuestion(false);
 
         waitingTM.renderer.enabled = false;
+        countdownTM.renderer.enabled = false;
 	}
 
     void ShowQuestion(bool show)
@@ -51,6 +68,8 @@ public class QuestionZone : MonoBehaviour {
         questionTM.renderer.enabled = show;
         answer1TM.renderer.enabled = show;
         answer2TM.renderer.enabled = show;
+        lbTM.renderer.enabled = show;
+        rbTM.renderer.enabled = show;
     }
 
     void GenerateQuestion()
@@ -60,6 +79,7 @@ public class QuestionZone : MonoBehaviour {
 
         waitingTM.renderer.enabled = false;
         introTM.renderer.enabled = false;
+        countdownTM.renderer.enabled = false;
 
         answer1TM.text = question.answer1;
         answer2TM.text = question.answer2;
@@ -68,8 +88,39 @@ public class QuestionZone : MonoBehaviour {
         ShowQuestion(true);
     }
 
+    void ShowEndText()
+    {
+        outro = true;
+        print("end");
+    }
+
 	// Update is called once per frame
 	void Update () {
+
+        if (intro)
+        {
+            time += Time.deltaTime;
+
+            if (time > 2)
+                countdownTM.text = "1";
+            else if (time > 1)
+                countdownTM.text = "2";
+            else
+                countdownTM.text = "3";
+
+            if (time > 3)
+            {
+                GenerateQuestion();
+
+                GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+                foreach (GameObject playah in players)
+                {
+                    playah.GetComponent<Player>().qstate = Player.QUESTIONSTATE.INPUT;
+                }
+
+                intro = false;
+            }
+        }
 
         if (inited)
         {
@@ -88,22 +139,19 @@ public class QuestionZone : MonoBehaviour {
 
             if (i == nrPlayers)
             {
-                GenerateQuestion();
+                introTM.renderer.enabled = false;
+                waitingTM.renderer.enabled = false;
 
-                foreach (GameObject playah in players)
-                {
-                    playah.GetComponent<Player>().qstate = Player.QUESTIONSTATE.INTRO;
-                }
+                countdownTM.renderer.enabled = true;
 
+                intro = true;
                 inited = false;
             }
         }
-
 	}
 
     public void SubmitAnswer(int answer, int player)
-    {
-       
+    {     
         collectedAnswers[player] = answer;
         numberOfAnswers++;
 
@@ -115,10 +163,22 @@ public class QuestionZone : MonoBehaviour {
 
     private void AnswersDone()
     {
+        if (question.correctAnswer == 0)
+        {
+            answer1TM.color = Color.green;
+            answer2TM.color = Color.red;
+        }
+        else
+        {
+            answer1TM.color = Color.red;
+            answer2TM.color = Color.green;
+        }
+
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
+        int i = 0;
         foreach (GameObject playah in players)
-        {
+        {    
             // Award scores and set state
             if (collectedAnswers[playah.GetComponent<Player>().JoyStickNum - 1] == question.correctAnswer)
             {
@@ -126,10 +186,22 @@ public class QuestionZone : MonoBehaviour {
                 //set player state to moving
 
                 print("Correct answer!");
+                i++;
             }
 
             playah.GetComponent<Player>().Unlock();
         }
+
+        if (i == nrPlayers)
+        {
+            //Instantiate(win);
+        }
+        else
+        {
+            //Instantiate(loose);
+        }
+
+        ShowEndText();
 
         used = true;
     }

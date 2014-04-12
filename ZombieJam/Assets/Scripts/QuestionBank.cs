@@ -22,17 +22,17 @@ public class QuestionBank : MonoBehaviour
             return;
 
         Question q = new Question();
-        q.question = "Hello?";
-        q.answer1 = "Yes";
-        q.answer2 = "No";
-        q.correctAnswer = 1;
+        q.question = "2+1?";
+        q.answer1 = "3";
+        q.answer2 = "5";
+        q.correctAnswer = 0;
         Questions.Add(q);
 
         Question q1 = new Question();
-        q1.question = "Second Question!";
-        q1.answer1 = "Yes2";
-        q1.answer2 = "No2";
-        q1.correctAnswer = 0;
+        q1.question = "Who is Marios brother?";
+        q1.answer1 = "Solid Snake";
+        q1.answer2 = "Luigi";
+        q1.correctAnswer = 1;
         Questions.Add(q1);
 
         initied = true;   
@@ -42,10 +42,9 @@ public class QuestionBank : MonoBehaviour
     {
         int r = Random.Range(0, Questions.Count-1);
 
-        print("R: " + r + " - " + Questions.Count);
+        //print("R: " + r + " - " + Questions.Count);
 
         Question q = Questions[r];
-
         Questions.Remove(q);
 
         return q;
