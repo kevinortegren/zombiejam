@@ -13,19 +13,18 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		rigidbody2D.AddForce(this.direction * 1000);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-		Vector3 temp = transform.position;
+		/*Vector3 temp = transform.position;
 		//print("X: " + direction.x + " Y: " + direction.y);
 	
 		temp.x += direction.x * speed;
 		temp.y += direction.y * speed;
 		
-		transform.position = temp;
+		transform.position = temp;*/
 	
 	}
 }

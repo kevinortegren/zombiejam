@@ -12,7 +12,8 @@ public class Blaster : Weapon {
 
 	public override void Fire (Vector2 playerPosition, Vector2 direction)
 	{
-		GameObject bulletImpl = Instantiate(bullet, new Vector3(playerPosition.x, playerPosition.y, 0.0f), Quaternion.identity) as GameObject;	
+		Vector2 spawnPosition = playerPosition + direction * 2;
+		GameObject bulletImpl = Instantiate(bullet, spawnPosition, Quaternion.identity) as GameObject;	
 		
 		bulletImpl.GetComponent<Bullet>().SetDirection(direction);
 	}

@@ -9,7 +9,7 @@ public class Player : controller {
 		AIR,
 		GROUND
 	}
-
+	
 	public GameObject activeWeapon;
 
 	private float timeWhenFired = 0.0f;
@@ -24,7 +24,6 @@ public class Player : controller {
 	
 	// Update is called once per frame
 	void Update () {
-	
 		// Level bounds check.
 		Vector3 position = transform.position;
 		if(position.x < Level.LevelWidth && position.x > 0 
