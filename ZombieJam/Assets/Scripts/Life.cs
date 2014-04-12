@@ -28,6 +28,6 @@ public class Life : MonoBehaviour {
 	public void Die()
 	{
         print(gameObject.name + " died.");
-        //Destroy(gameObject);
+        Destroy(gameObject);
 	}
 }
