@@ -142,9 +142,8 @@ public class Player : controller {
 				break;
 			}
 		}
-		
-		
-		
+
+        // Use aim direction to rotate arm.
 		RotateArm();	
 	}
 
@@ -156,10 +155,15 @@ public class Player : controller {
 		{
 			// If the controller has an aiming direction.
 			if(aimVec != Vector3.zero)
-				latestAimingDirection = aimVec;		
-				
-		
-			weapon.Fire(transform.position + latestAimingDirection * 1.5f, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+				latestAimingDirection = aimVec;
+
+            // TODO: Use weapon instead of hand.
+            GameObject arm = GameObject.FindGameObjectWithTag("Hand");
+
+            //print(arm.transform.position);
+            //print(transform.position);
+
+            weapon.Fire(arm.transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}
