@@ -39,8 +39,42 @@ public class Player : controller {
 
     private float introTime = 0.0f;
 
+    public GameObject guitext;
+
+    private GUIText gtext;
+
 	// Use this for initialization
 	void Start () {
+
+        GameObject gobject = (GameObject)Instantiate(guitext, transform.position, transform.rotation);
+        gtext = gobject.GetComponent<GUIText>();
+        gtext.transform.position = new Vector3(0.15f * (float)(JoyStickNum - 1.0f), 0.05f, 0.0f);
+
+        switch (JoyStickNum)
+        {
+            case 1:
+            {
+                gtext.color = Color.red;
+                break;
+            }
+            case 2:
+            {
+                gtext.color = Color.blue;
+                break;
+            }
+            case 3:
+            {
+                gtext.color = Color.green;
+                break;
+            }
+            case 4:
+            {
+                gtext.color = Color.yellow;
+                break;
+            }
+            default:
+                break;
+        }
 
         Transform[] joints = gameObject.GetComponentsInChildren<Transform>();
         foreach (Transform t in joints)
@@ -258,5 +292,11 @@ public class Player : controller {
                 }
             }
         }
+    }
+
+    public void AddScore(int p_score)
+    {
+        score += p_score;
+        gtext.text = score.ToString();
     }
 }
