@@ -25,7 +25,7 @@ public class BadGuyAI : AISimple {
 
     public void Start()
     {
-        //transform.Rotate(new Vector3(0, 180, 0));
+        transform.Rotate(new Vector3(0, 180, 0));
 
         Transform[] joints = gameObject.GetComponentsInChildren<Transform>();
         foreach (Transform t in joints)
@@ -70,7 +70,7 @@ public class BadGuyAI : AISimple {
 
     public override void Move()
     {
-        animation.CrossFade("Walking", 0.3f);
+        animation.CrossFade("BadGuyWalking", 0.3f);
 
         // Moving x.
         if (bestDirection.x > 0)
