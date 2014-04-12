@@ -19,7 +19,9 @@ public class controller : MonoBehaviour {
 	}
 	
 	public int JoyStickNum = 0;
+
 	protected STATE previousState = STATE.RUNNINGRIGHT;
+    protected STATE currentState = STATE.RUNNINGRIGHT;
 
 	protected Vector3 aimVec;
 
@@ -39,27 +41,37 @@ public class controller : MonoBehaviour {
 		{
 			if(deltaPos.x > 0.1)
 			{
-				ProcessState (STATE.RUNNINGRIGHT);
+                currentState = STATE.RUNNINGRIGHT;
+
+				//ProcessState (STATE.RUNNINGRIGHT);
 			}
 			else
 			{
-				ProcessState (STATE.WALKINGRIGHT);
+                currentState = STATE.WALKINGRIGHT;
+
+				//ProcessState (STATE.WALKINGRIGHT);
 			}
 		} 
 		else if (deltaPos.x < 0.0) 
 		{
 			if(deltaPos.x < -0.1)
 			{
-				ProcessState (STATE.RUNNINGLEFT);
+                currentState = STATE.RUNNINGLEFT;
+
+				//ProcessState (STATE.RUNNINGLEFT);
 			}
 			else
 			{
-				ProcessState ( STATE.WALKINGLEFT);
+                currentState = STATE.WALKINGLEFT;
+
+				//ProcessState ( STATE.WALKINGLEFT);
 			}
 		}
 		else 
 		{
-			ProcessState (STATE.IDLESTATE);
+            currentState = STATE.IDLESTATE;
+
+			//ProcessState (STATE.IDLESTATE);
 		}
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
@@ -72,10 +84,12 @@ public class controller : MonoBehaviour {
 			ProcessInput(JOYSTICKBUTTON.FIRE);
 		}
 
-		transform.position += deltaPos; 
+		transform.position += deltaPos;
+
+        ProcessState();
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
 
-	protected virtual void ProcessState(STATE State) {}
+	protected virtual void ProcessState() {}
 }

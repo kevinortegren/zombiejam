@@ -16,6 +16,11 @@ public class Player : controller {
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
 
+	Quaternion currentAim = Quaternion.identity;
+	
+	float currentAngle = 0.0f;
+    bool flipped = true;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -32,7 +37,22 @@ public class Player : controller {
 				
 		}
 
-		base.UpdateInput ();
+		base.UpdateInput ();	
+	}
+
+	void RotateArm()
+	{
+        if (aimVec != Vector3.zero)
+        {
+            GameObject arm = GameObject.FindGameObjectWithTag("Arm");
+
+            float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
+
+            Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
+            currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
+
+            arm.transform.rotation = currentAim;          
+        }
 	}
 
 	void OnCollisionEnter2D(Collision2D hit)
@@ -72,57 +92,59 @@ public class Player : controller {
 		}
 	}
 
-	protected override void ProcessState(STATE State)
+	protected override void ProcessState()
 	{
-		switch (State) {
-		case STATE.RUNNINGLEFT:
-				{
-						animation.CrossFade ("Running", 0.3f);
-						if(previousState != State && previousState != STATE.WALKINGLEFT)
-						{
-							transform.Rotate (0, 180, 0);
-						}
-						previousState = State;	
-						break;
-				}
-		case STATE.WALKINGLEFT:
-		{
-			animation.CrossFade ("Walking", 0.3f);
-			if(previousState != State && previousState != STATE.RUNNINGLEFT)
+		switch (base.currentState) {
+			case STATE.RUNNINGLEFT:
 			{
-				transform.Rotate (0, 180, 0);
-			}
-			previousState = State;	
-			break;
-		}
-		case STATE.RUNNINGRIGHT:
+				animation.CrossFade ("Running", 0.3f);
+                if (previousState != currentState && previousState != STATE.WALKINGLEFT)
 				{
-						animation.CrossFade ("Running", 0.3f);
-			if(previousState != State && previousState != STATE.WALKINGRIGHT)
-						{
-							transform.Rotate (0, 180, 0);
-						}
-						previousState = State;
-						break;
+					transform.Rotate (0, 180, 0);
 				}
-		case STATE.WALKINGRIGHT:
-		{
-			animation.CrossFade ("Walking", 0.3f);
-			if(previousState != State && previousState != STATE.RUNNINGRIGHT)
+                previousState = currentState;	
+				break;
+			}
+			case STATE.WALKINGLEFT:
 			{
-				transform.Rotate (0, 180, 0);
-			}
-			previousState = State;	
-			break;
-		}
-		default:
+				animation.CrossFade ("Walking", 0.3f);
+                if (previousState != currentState && previousState != STATE.RUNNINGLEFT)
 				{
-						animation.CrossFade ("Idle", 0.3f);
-						break;
+					transform.Rotate (0, 180, 0);
 				}
+                previousState = currentState;	
+				break;
 			}
+			case STATE.RUNNINGRIGHT:
+			{
+				animation.CrossFade ("Running", 0.3f);
+                if (previousState != currentState && previousState != STATE.WALKINGRIGHT)
+				{
+					transform.Rotate (0, 180, 0);
+				}
+                previousState = currentState;
+				break;
+			}
+			case STATE.WALKINGRIGHT:
+			{
+				animation.CrossFade ("Walking", 0.3f);
+                if (previousState != currentState && previousState != STATE.RUNNINGRIGHT)
+				{
+					transform.Rotate (0, 180, 0);
+				}
+                previousState = currentState;	
+				break;
+			}
+			default:
+			{
+				animation.CrossFade ("Idle", 0.3f);
+				break;
+			}
+		}
 
-		}
+        // Use aim direction to rotate arm.
+		RotateArm();	
+	}
 
 	void Shoot()
 	{
@@ -132,10 +154,15 @@ public class Player : controller {
 		{
 			// If the controller has an aiming direction.
 			if(aimVec != Vector3.zero)
-				latestAimingDirection = aimVec;		
-				
-		
-			weapon.Fire(transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+				latestAimingDirection = aimVec;
+
+            // TODO: Use weapon instead of hand.
+            GameObject arm = GameObject.FindGameObjectWithTag("Hand");
+
+            //print(arm.transform.position);
+            //print(transform.position);
+
+            weapon.Fire(arm.transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}
