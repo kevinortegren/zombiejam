@@ -32,7 +32,6 @@ public class controller : MonoBehaviour {
 		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), 0, 0 );
 		aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 		aimVec = Vector3.Normalize(aimVec);
-		
 
 		if (deltaPos.x > 0) 
 		{

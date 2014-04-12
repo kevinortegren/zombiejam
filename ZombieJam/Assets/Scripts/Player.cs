@@ -16,6 +16,10 @@ public class Player : controller {
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
 
+	Quaternion currentAim = Quaternion.identity;
+	
+	float currentAngle = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -29,9 +33,10 @@ public class Player : controller {
 
 		float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
 
-		Quaternion quat = Quaternion.Euler(new Vector3(0, 0, angle));
+		Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
+		currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
 
-		arm.transform.rotation = quat;
+		arm.transform.rotation = currentAim;	
 
 		// Level bounds check.
 		Vector3 position = transform.position;
