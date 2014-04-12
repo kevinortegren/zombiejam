@@ -9,18 +9,30 @@ public class Player : controller {
 		AIR,
 		GROUND
 	}
-	
+
+    enum QUESTIONSTATE
+    {
+        NONE,
+        INTRO,
+        INPUT,
+        WAITING
+
+    }
+
 	public GameObject activeWeapon;
     public float jumpForce = 700;
 
 	private float timeWhenFired = 0.0f;
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
+    private QUESTIONSTATE qstate = QUESTIONSTATE.NONE;
 
 	Quaternion currentAim = Quaternion.identity;
 
     private Transform shoulder;
     private Transform hand;
+
+    private float introTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -42,15 +54,26 @@ public class Player : controller {
 	
 	// Update is called once per frame
 	void Update () {
-		// Level bounds check.
-		Vector3 position = transform.position;
-		if(position.x < Level.LevelWidth && position.x > 0 
-			&& position.y > 0 && position.y < Level.LevelHeight)
-		{
-				
-		}
 
-		base.UpdateInput ();	
+        if (qstate == QUESTIONSTATE.INTRO)
+        {
+            introTime += Time.deltaTime;
+
+            if (introTime > 2.0f)
+            {
+                print("Intro Done.");
+                qstate = QUESTIONSTATE.INPUT;
+                introTime = 0.0f;
+            }
+        }
+        if (qstate == QUESTIONSTATE.INPUT)
+        {
+            base.UpdateQuestionInput();
+        }
+        else
+        {
+            base.UpdateInput();
+        }
 	}
 
 	void RotateArm()
@@ -78,21 +101,42 @@ public class Player : controller {
 	{
 		switch(button)
 		{
-		case JOYSTICKBUTTON.JUMP: 
-		{
-			Jump();
-			animation.Play("Jumping");
-			break;
-		}
-		case JOYSTICKBUTTON.FIRE: 
-		{
-			Shoot();
-			break;
-		}
-		default:
-			break;
-		}
+		    case JOYSTICKBUTTON.JUMP: 
+		    {
+			    Jump();
+			    animation.Play("Jumping");
+			    break;
+		    }
+		    case JOYSTICKBUTTON.FIRE: 
+		    {
+			    Shoot();
+			    break;
+		    }
+		    default:
+			    break;
+		    }
 	}
+
+    protected override void ProcessQuestionInput(JOYSTICKBUTTON button)
+    {
+        switch (button)
+        {
+            case JOYSTICKBUTTON.JUMP:
+                {
+                    print("A");
+                    qstate = QUESTIONSTATE.WAITING;
+                    break;
+                }
+            case JOYSTICKBUTTON.FIRE:
+                {
+                    print("B");
+                    qstate = QUESTIONSTATE.WAITING;
+                    break;
+                }
+            default:
+                break;
+        }
+    }
 
 	void Jump()
 	{
@@ -171,4 +215,16 @@ public class Player : controller {
 			timeWhenFired = Time.time;
 		}
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Test")
+        {
+            if (qstate == QUESTIONSTATE.NONE)
+            {
+                print("Enter zone.");
+                qstate = QUESTIONSTATE.INTRO;
+            }
+        }
+    }
 }

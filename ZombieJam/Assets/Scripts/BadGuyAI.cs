@@ -64,7 +64,7 @@ public class BadGuyAI : AISimple {
             Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
             currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
 
-            shoulder.rotation = newAim;
+            shoulder.rotation = currentAim;
         }
     }
 
