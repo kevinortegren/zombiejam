@@ -5,10 +5,16 @@ public class Blaster : Weapon {
 
     public GameObject bullet;
 
-	public Blaster() : base(0.2f)
+	public Blaster() : base(0.2f, 0.0f, 0.0f)
 	{
-		
+
 	}
+
+    public override void setPositionAtHand()
+    {
+        transform.localPosition = new Vector3(0.002f, 0.002f, -0.001f);
+        transform.localRotation = Quaternion.Euler(new Vector3(-90, 0, 0));
+    }
 
     public override void Fire(GameObject owner, Vector3 playerPosition, Vector2 direction)
 	{

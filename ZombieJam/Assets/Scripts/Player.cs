@@ -33,6 +33,14 @@ public class Player : controller {
                 hand = t.GetChild(0);
             }
 
+            if (t.name == "RightHand")
+            {
+                GameObject weaponObject = (GameObject)Instantiate(activeWeapon);
+                weaponObject.transform.parent = t;
+                weaponObject.GetComponent<Weapon>().setPositionAtHand();
+                hand = weaponObject.transform;
+            }
+
             if (t.name == "RightShoulder")
             {
                 shoulder = t;
@@ -154,7 +162,7 @@ public class Player : controller {
 		}
 
         // Use aim direction to rotate arm.
-		RotateArm();	
+        RotateArm();
 	}
 
 	void Shoot()
