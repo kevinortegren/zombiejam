@@ -9,7 +9,14 @@ public class Life : MonoBehaviour {
 	void Start () {
 
 	}
-	
+
+    public void TakeDamage(float health)
+    {
+        this.health -= health;
+        print(gameObject.name + " " + this.health + " hp.");
+        
+    }
+
 	// Update is called once per frame
 	void Update () {
 		if(health < 0.0f)
@@ -18,8 +25,9 @@ public class Life : MonoBehaviour {
 		}
 	}
 
-	void Die()
+	public void Die()
 	{
-
+        print(gameObject.name + " died.");
+        Destroy(gameObject);
 	}
 }

@@ -15,14 +15,16 @@ ModelImporter:
     400008: Lamp
     2300000: Cylinder_000
     2300002: Cylinder_002
+    2300004: //RootNode
     3300000: Cylinder_000
     3300002: Cylinder_002
+    3300004: //RootNode
     4300000: Cylinder_002
     4300002: Cylinder_000
     9500000: //RootNode
   materials:
-    importMaterials: 0
-    materialName: 0
+    importMaterials: 1
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

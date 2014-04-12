@@ -84,6 +84,11 @@ public class controller : MonoBehaviour {
 			ProcessInput(JOYSTICKBUTTON.FIRE);
 		}
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ProcessInput(JOYSTICKBUTTON.FIRE);
+        }
+
 		transform.position += deltaPos;
 
         ProcessState();
