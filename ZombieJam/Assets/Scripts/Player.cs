@@ -13,6 +13,7 @@ public class Player : controller {
     enum QUESTIONSTATE
     {
         NONE,
+        INTRO,
         INPUT,
         WAITING
 
@@ -30,6 +31,8 @@ public class Player : controller {
 
     private Transform shoulder;
     private Transform hand;
+
+    private float introTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -52,6 +55,17 @@ public class Player : controller {
 	// Update is called once per frame
 	void Update () {
 
+        if (qstate == QUESTIONSTATE.INTRO)
+        {
+            introTime += Time.deltaTime;
+
+            if (introTime > 2.0f)
+            {
+                print("Intro Done.");
+                qstate = QUESTIONSTATE.INPUT;
+                introTime = 0.0f;
+            }
+        }
         if (qstate == QUESTIONSTATE.INPUT)
         {
             base.UpdateQuestionInput();
@@ -208,7 +222,8 @@ public class Player : controller {
         {
             if (qstate == QUESTIONSTATE.NONE)
             {
-                qstate = QUESTIONSTATE.INPUT;
+                print("Enter zone.");
+                qstate = QUESTIONSTATE.INTRO;
             }
         }
     }
