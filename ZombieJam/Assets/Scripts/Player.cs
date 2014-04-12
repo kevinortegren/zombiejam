@@ -9,7 +9,7 @@ public class Player : controller {
 		AIR,
 		GROUND
 	}
-
+	
 	public GameObject activeWeapon;
     public float jumpForce = 1000;
 
@@ -42,7 +42,6 @@ public class Player : controller {
 	
 	// Update is called once per frame
 	void Update () {
-	
 		// Level bounds check.
 		Vector3 position = transform.position;
 		if(position.x < Level.LevelWidth && position.x > 0 
