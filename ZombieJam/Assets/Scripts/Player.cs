@@ -11,7 +11,7 @@ public class Player : controller {
 	}
 	
 	public GameObject activeWeapon;
-    public float jumpForce = 1000;
+    public float jumpForce = 700;
 
 	private float timeWhenFired = 0.0f;
 	private Vector3 latestAimingDirection = Vector3.right;
