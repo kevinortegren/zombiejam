@@ -38,7 +38,7 @@ public class Bullet : MonoBehaviour {
         // Do not collide with self.
         if (other.gameObject.tag != owner.tag)
         {
-            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "PLayer")
+            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
             {
                 other.gameObject.GetComponent<Life>().TakeDamage(damage);
             }
