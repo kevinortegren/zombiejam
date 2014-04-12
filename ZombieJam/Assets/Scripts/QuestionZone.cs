@@ -182,12 +182,14 @@ public class QuestionZone : MonoBehaviour {
             // Award scores and set state
             if (collectedAnswers[playah.GetComponent<Player>().JoyStickNum - 1] == question.correctAnswer)
             {
-                //playah.GetComponent<Player>().AwardScore(200);
+                playah.GetComponent<Player>().AddScore(2);
                 //set player state to moving
 
                 print("Correct answer!");
                 i++;
             }
+            else
+                playah.GetComponent<Player>().AddScore(-2);
 
             playah.GetComponent<Player>().Unlock();
         }
