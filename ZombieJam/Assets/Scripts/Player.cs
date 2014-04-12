@@ -87,7 +87,7 @@ public class Player : controller {
 	{
 		if(state == PLAYERSTATE.GROUND)
 		{
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 600));
 			state = PLAYERSTATE.AIR;
 		}
 	}
