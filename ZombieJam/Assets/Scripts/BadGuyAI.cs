@@ -48,22 +48,18 @@ public class BadGuyAI : AISimple {
     {
         base.RunAI();
 
-        //print(bestDirection);
+        bestDirection = Vector3.Normalize(new Vector3(bestDirection.x, bestDirection.y, 0.0f));
 
         RotateArm();
 
-        //Shoot();
+        Shoot();
     }
 
     void RotateArm()
     {
-        print(bestDirection);
-
         if (bestDirection != Vector3.zero)
         {
-            Vector3 d = Vector3.Normalize(new Vector3(-bestDirection.x, -bestDirection.y, 0.0f));
-
-            float angle = (float)Math.Atan2(d.y, d.x) * Mathf.Rad2Deg;
+            float angle = (float)Math.Atan2(-bestDirection.y, -bestDirection.x) * Mathf.Rad2Deg;
 
             Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
             currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
@@ -74,7 +70,7 @@ public class BadGuyAI : AISimple {
 
     public override void Move()
     {
-        animation.CrossFade("BadGuyWalking", 0.3f);
+        animation.CrossFade("Walking", 0.3f);
 
         // Moving x.
         if (bestDirection.x > 0)
