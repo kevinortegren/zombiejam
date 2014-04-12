@@ -15,12 +15,11 @@ public class Button : MonoBehaviour {
         if (FocusOrder == MenuItemsLogic.FocusedItem)
         {
             Vector3 trans = transform.position;
-            trans.z = (float)System.Math.Sin((float)Time.time * 4.0f) * 4.0f;
+            trans.z = (float)System.Math.Sin((float)Time.time * 4.0f) * 2.0f;
             transform.position = trans;
 
             if (Input.GetButtonDown("Jump1"))
             {
-                print("button down");
                 OnClicked();
             }
         }
