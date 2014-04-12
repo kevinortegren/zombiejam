@@ -23,8 +23,10 @@ public class QuestionZone : MonoBehaviour {
     TextMesh lbTM;
     TextMesh rbTM;
     TextMesh countdownTM;
+    TextMesh outroTM;
 
     private float time = 0.0f;
+    private float fsize = 0.0f;
 
     public GameObject win;
     public GameObject loose;
@@ -55,12 +57,15 @@ public class QuestionZone : MonoBehaviour {
                 lbTM = txm;
             else if (txm.name == "RB")
                 rbTM = txm;
+            else if (txm.name == "Outro")
+                outroTM = txm;
         }
 
         ShowQuestion(false);
 
         waitingTM.renderer.enabled = false;
         countdownTM.renderer.enabled = false;
+        outroTM.renderer.enabled = false;
 	}
 
     void ShowQuestion(bool show)
@@ -86,12 +91,6 @@ public class QuestionZone : MonoBehaviour {
         questionTM.text = question.question;
 
         ShowQuestion(true);
-    }
-
-    void ShowEndText()
-    {
-        outro = true;
-        print("end");
     }
 
 	// Update is called once per frame
@@ -121,8 +120,7 @@ public class QuestionZone : MonoBehaviour {
                 intro = false;
             }
         }
-
-        if (inited)
+        else if (inited)
         {
             waitingTM.renderer.enabled = true;
 
@@ -148,6 +146,23 @@ public class QuestionZone : MonoBehaviour {
                 inited = false;
             }
         }
+        else if (outro)
+        {
+            time += Time.deltaTime;
+            if (time < 1.4f)
+            {
+                fsize += Time.time * 1.8f;
+
+                if (outroTM.fontSize < 600)
+                {
+                    outroTM.fontSize = (60 + (int)(fsize));
+                }
+            }
+            else
+            {
+                outroTM.renderer.enabled = false;
+            }
+        }
 	}
 
     public void SubmitAnswer(int answer, int player)
@@ -159,6 +174,25 @@ public class QuestionZone : MonoBehaviour {
         {
             AnswersDone();
         }
+    }
+
+    private void ShowEndText(bool win)
+    {
+        if (win)
+        {
+            outroTM.color = Color.green;
+            outroTM.text = "Correct!";
+        }
+        else
+        {
+            outroTM.color = Color.red;
+            outroTM.text = "Incorrect!";
+        }
+
+        outroTM.renderer.enabled = true;
+        outro = true;
+        time = 0.0f;
+        print("end");
     }
 
     private void AnswersDone()
@@ -195,13 +229,18 @@ public class QuestionZone : MonoBehaviour {
         if (i == nrPlayers)
         {
             //Instantiate(win);
+            ShowEndText(true);
         }
         else
         {
-            //Instantiate(loose);
-        }
+            if (loose != null)
+            {
+                GameObject g = (GameObject)Instantiate(loose);
+                g.GetComponent<SpawnEnemy>().Trigger();
+            }
 
-        ShowEndText();
+            ShowEndText(false);
+        }
 
         used = true;
     }
