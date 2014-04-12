@@ -16,6 +16,7 @@ public class Player : controller {
 	private float timeWhenFired = 0.0f;
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
+    private int score = 0;
 
 	Quaternion currentAim = Quaternion.identity;
 
