@@ -72,6 +72,38 @@ public class Player : controller {
 		}
 	}
 
+	protected override void ProcessState(STATE State)
+	{
+		switch (State) {
+		case STATE.MOVINGLEFT:
+				{
+						animation.CrossFade ("Running", 0.3f);
+						if(previousState != State)
+						{
+							transform.Rotate (0, 180, 0);
+						}
+						previousState = State;	
+						break;
+				}
+		case STATE.MOVINGRIGHT:
+				{
+						animation.CrossFade ("Running", 0.3f);
+						if(previousState != State)
+						{
+							transform.Rotate (0, 180, 0);
+						}
+						previousState = State;
+						break;
+				}
+		default:
+				{
+						animation.CrossFade ("Idle", 0.3f);
+						break;
+				}
+			}
+
+		}
+
 	void Shoot()
 	{
 		Weapon weapon = activeWeapon.GetComponent<Weapon>();

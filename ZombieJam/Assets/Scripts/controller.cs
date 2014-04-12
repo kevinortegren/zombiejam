@@ -6,9 +6,18 @@ public class controller : MonoBehaviour {
 	protected enum JOYSTICKBUTTON
 	{
 		FIRE,
-		JUMP
+		JUMP,
 	}
+	
+	protected enum STATE
+	{
+		MOVINGLEFT,
+		MOVINGRIGHT,
+		IDLESTATE,
+	}
+	
 	public int JoyStickNum = 0;
+	protected STATE previousState = STATE.MOVINGRIGHT;
 
 	protected Vector3 aimVec;
 
@@ -25,6 +34,19 @@ public class controller : MonoBehaviour {
 		aimVec = Vector3.Normalize(aimVec);
 		
 
+		if (deltaPos.x > 0) 
+		{
+			ProcessState (STATE.MOVINGRIGHT);
+		} 
+		else if (deltaPos.x < 0) 
+		{
+			ProcessState (STATE.MOVINGLEFT);
+		} 
+		else 
+		{
+			ProcessState (STATE.IDLESTATE);
+		}
+
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
 		{
 			ProcessInput(JOYSTICKBUTTON.JUMP);
@@ -39,4 +61,6 @@ public class controller : MonoBehaviour {
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
+
+	protected virtual void ProcessState(STATE State) {}
 }
