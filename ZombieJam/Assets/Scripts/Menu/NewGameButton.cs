@@ -16,6 +16,7 @@ public class NewGameButton : Button {
 
     protected override void OnClicked()
     {
+        Application.LoadLevel(2);
  	     base.OnClicked();
     }
 }
