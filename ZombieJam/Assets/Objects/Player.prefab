@@ -493,6 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JoyStickNum: 1
   activeWeapon: {fileID: 100000, guid: 779aa442e28959442915c67f19f165d3, type: 2}
+  jumpForce: 1000
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
