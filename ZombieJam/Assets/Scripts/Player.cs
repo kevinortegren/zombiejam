@@ -9,7 +9,16 @@ public class Player : controller {
 		AIR,
 		GROUND
 	}
-	
+
+    public enum QUESTIONSTATE
+    {
+        NONE,
+        INTRO,
+        INPUT,
+        WAITING
+
+    }
+
 	public GameObject activeWeapon;
     public float jumpForce = 700;
 
@@ -17,10 +26,18 @@ public class Player : controller {
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
 
+    private int score = 0;
+
+    public QUESTIONSTATE qstate = QUESTIONSTATE.NONE;
+
+    private GameObject currentQZone;
+
 	Quaternion currentAim = Quaternion.identity;
 
     private Transform shoulder;
     private Transform hand;
+
+    private float introTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -42,15 +59,28 @@ public class Player : controller {
 	
 	// Update is called once per frame
 	void Update () {
-		// Level bounds check.
-		Vector3 position = transform.position;
-		if(position.x < Level.LevelWidth && position.x > 0 
-			&& position.y > 0 && position.y < Level.LevelHeight)
-		{
-				
-		}
 
-		base.UpdateInput ();	
+        if (qstate == QUESTIONSTATE.INTRO)
+        {
+            introTime += Time.deltaTime;
+
+            if (introTime > 2.0f)
+            {
+                print("Intro Done.");
+                qstate = QUESTIONSTATE.INPUT;
+                introTime = 0.0f;
+            }
+        }
+        else if (qstate == QUESTIONSTATE.INPUT)
+        {
+            base.UpdateQuestionInput();
+        }
+        else if(qstate == QUESTIONSTATE.NONE)
+        {
+            base.UpdateInput();
+
+            Shoot();
+        }
 	}
 
 	void RotateArm()
@@ -78,21 +108,48 @@ public class Player : controller {
 	{
 		switch(button)
 		{
-		case JOYSTICKBUTTON.JUMP: 
-		{
-			Jump();
-			animation.Play("Jumping");
-			break;
-		}
-		case JOYSTICKBUTTON.FIRE: 
-		{
-			Shoot();
-			break;
-		}
-		default:
-			break;
-		}
+		    case JOYSTICKBUTTON.JUMP: 
+		    {
+			    Jump();
+			    animation.Play("Jumping");
+			    break;
+		    }
+		    case JOYSTICKBUTTON.FIRE: 
+		    {
+			    
+			    break;
+		    }
+		    default:
+			    break;
+		    }
 	}
+
+    protected override void ProcessQuestionInput(JOYSTICKBUTTON button)
+    {
+        switch (button)
+        {
+            case JOYSTICKBUTTON.JUMP:
+                {
+                    qstate = QUESTIONSTATE.WAITING;
+                    currentQZone.GetComponent<QuestionZone>().SubmitAnswer(0, JoyStickNum - 1);
+
+                    print("A");
+                    
+                    break;
+                }
+            case JOYSTICKBUTTON.FIRE:
+                {
+                    qstate = QUESTIONSTATE.WAITING;
+                    currentQZone.GetComponent<QuestionZone>().SubmitAnswer(1, JoyStickNum - 1);
+
+                    print("B");
+                    
+                    break;
+                }
+            default:
+                break;
+        }
+    }
 
 	void Jump()
 	{
@@ -102,6 +159,14 @@ public class Player : controller {
 			state = PLAYERSTATE.AIR;
 		}
 	}
+
+    public void Unlock()
+    {
+        if (qstate == QUESTIONSTATE.WAITING)
+        {
+            qstate = QUESTIONSTATE.NONE;
+        }
+    }
 
 	protected override void ProcessState()
 	{
@@ -160,15 +225,38 @@ public class Player : controller {
 	void Shoot()
 	{
 		Weapon weapon = activeWeapon.GetComponent<Weapon>();
-	
-		if(Time.time >= timeWhenFired + weapon.cooldown)
-		{
-			// If the controller has an aiming direction.
-			if(aimVec != Vector3.zero)
+
+        if (aimVec != Vector3.zero)
+        {
+		    if(Time.time >= timeWhenFired + weapon.cooldown)
+		    {
+			    // If the controller has an aiming direction.
+			
 				latestAimingDirection = aimVec;
 
-            weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
-			timeWhenFired = Time.time;
-		}
+                print(latestAimingDirection);
+
+                weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+			    timeWhenFired = Time.time;
+		    }
+        }
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "QuestionZones")
+        {
+            if (!other.gameObject.GetComponent<QuestionZone>().used)
+            {
+                if (qstate == QUESTIONSTATE.NONE)
+                {
+                    currentQZone = other.gameObject;
+
+                    currentQZone.GetComponent<QuestionZone>().inited = true;
+                    
+                    qstate = QUESTIONSTATE.WAITING;
+                }
+            }
+        }
+    }
 }

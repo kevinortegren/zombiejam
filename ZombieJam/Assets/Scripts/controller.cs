@@ -29,7 +29,25 @@ public class controller : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+    protected void UpdateQuestionInput()
+    {
+        if (Input.GetButtonDown("Jump" + JoyStickNum.ToString()))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.JUMP);
+        }
+
+        if (Input.GetButtonDown("Fire" + JoyStickNum.ToString()))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.FIRE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.FIRE);
+        }
+    }
+
 	// Update is called once per frame
 	protected void UpdateInput () {
 
@@ -89,12 +107,23 @@ public class controller : MonoBehaviour {
             ProcessInput(JOYSTICKBUTTON.FIRE);
         }
 
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            deltaPos.x += 0.1f;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            deltaPos.x -= 0.1f;
+        }
+
 		transform.position += deltaPos;
 
         ProcessState();
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
+    protected virtual void ProcessQuestionInput(JOYSTICKBUTTON button) { }
 
 	protected virtual void ProcessState() {}
 }
