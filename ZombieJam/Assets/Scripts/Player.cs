@@ -28,9 +28,9 @@ public class Player : controller {
         Transform[] joints = gameObject.GetComponentsInChildren<Transform>();
         foreach (Transform t in joints)
         {
-            if (t.name == "RightHand")
+            if (t.name == "Blaster")
             {
-                hand = t;
+                hand = t.GetChild(0);
             }
 
             if (t.name == "RightShoulder")
