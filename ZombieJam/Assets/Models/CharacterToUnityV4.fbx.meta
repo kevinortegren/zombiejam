@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 691e587aa11af964cb91a61de686422f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: //RootNode
+    100004: Hip
+    100006: LeftElbow
+    100008: LeftFoot
+    100010: LeftHand
+    100012: LeftKnee
+    100014: LeftShoulder
+    100016: LeftUpLeg
+    100018: polySurface14
+    100020: RightElbow
+    100022: RightFoot
+    100024: RightHand
+    100026: RightKnee
+    100028: RightShoulder
+    100030: RightUpLeg
+    400000: Body
+    400002: //RootNode
+    400004: Hip
+    400006: LeftElbow
+    400008: LeftFoot
+    400010: LeftHand
+    400012: LeftKnee
+    400014: LeftShoulder
+    400016: LeftUpLeg
+    400018: polySurface14
+    400020: RightElbow
+    400022: RightFoot
+    400024: RightHand
+    400026: RightKnee
+    400028: RightShoulder
+    400030: RightUpLeg
+    4300000: polySurface14
+    7400000: Idle
+    7400002: Running
+    7400004: Jumping
+    7400006: Walking
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: polySurface14
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Running
+      takeName: Take 001
+      firstFrame: 101
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jumping
+      takeName: Take 001
+      firstFrame: 121
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walking
+      takeName: Take 001
+      firstFrame: 131
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -11,13 +11,15 @@ public class controller : MonoBehaviour {
 	
 	protected enum STATE
 	{
-		MOVINGLEFT,
-		MOVINGRIGHT,
-		IDLESTATE,
+		RUNNINGLEFT,
+		RUNNINGRIGHT,
+		WALKINGLEFT,
+		WALKINGRIGHT,
+		IDLESTATE
 	}
 	
 	public int JoyStickNum = 0;
-	protected STATE previousState = STATE.MOVINGRIGHT;
+	protected STATE previousState = STATE.RUNNINGRIGHT;
 
 	protected Vector3 aimVec;
 
@@ -32,16 +34,29 @@ public class controller : MonoBehaviour {
 		Vector3 deltaPos = new Vector3 (Input.GetAxis ("HorizontalLeft" + JoyStickNum.ToString()), 0, 0 );
 		aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 		aimVec = Vector3.Normalize(aimVec);
-		
 
-		if (deltaPos.x > 0) 
+		if (deltaPos.x > 0.0)
 		{
-			ProcessState (STATE.MOVINGRIGHT);
+			if(deltaPos.x > 0.1)
+			{
+				ProcessState (STATE.RUNNINGRIGHT);
+			}
+			else
+			{
+				ProcessState (STATE.WALKINGRIGHT);
+			}
 		} 
-		else if (deltaPos.x < 0) 
+		else if (deltaPos.x < 0.0) 
 		{
-			ProcessState (STATE.MOVINGLEFT);
-		} 
+			if(deltaPos.x < -0.1)
+			{
+				ProcessState (STATE.RUNNINGLEFT);
+			}
+			else
+			{
+				ProcessState ( STATE.WALKINGLEFT);
+			}
+		}
 		else 
 		{
 			ProcessState (STATE.IDLESTATE);

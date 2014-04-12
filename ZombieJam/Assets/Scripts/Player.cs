@@ -51,6 +51,7 @@ public class Player : controller {
 		case JOYSTICKBUTTON.JUMP: 
 		{
 			Jump();
+			animation.Play("Jumping");
 			break;
 		}
 		case JOYSTICKBUTTON.FIRE: 
@@ -75,26 +76,46 @@ public class Player : controller {
 	protected override void ProcessState(STATE State)
 	{
 		switch (State) {
-		case STATE.MOVINGLEFT:
+		case STATE.RUNNINGLEFT:
 				{
 						animation.CrossFade ("Running", 0.3f);
-						if(previousState != State)
+						if(previousState != State && previousState != STATE.WALKINGLEFT)
 						{
 							transform.Rotate (0, 180, 0);
 						}
 						previousState = State;	
 						break;
 				}
-		case STATE.MOVINGRIGHT:
+		case STATE.WALKINGLEFT:
+		{
+			animation.CrossFade ("Walking", 0.3f);
+			if(previousState != State && previousState != STATE.RUNNINGLEFT)
+			{
+				transform.Rotate (0, 180, 0);
+			}
+			previousState = State;	
+			break;
+		}
+		case STATE.RUNNINGRIGHT:
 				{
 						animation.CrossFade ("Running", 0.3f);
-						if(previousState != State)
+			if(previousState != State && previousState != STATE.WALKINGRIGHT)
 						{
 							transform.Rotate (0, 180, 0);
 						}
 						previousState = State;
 						break;
 				}
+		case STATE.WALKINGRIGHT:
+		{
+			animation.CrossFade ("Walking", 0.3f);
+			if(previousState != State && previousState != STATE.RUNNINGRIGHT)
+			{
+				transform.Rotate (0, 180, 0);
+			}
+			previousState = State;	
+			break;
+		}
 		default:
 				{
 						animation.CrossFade ("Idle", 0.3f);
