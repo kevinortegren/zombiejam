@@ -4,11 +4,8 @@ using System.Collections.Generic;
 
 public class AISimple : MonoBehaviour {
 
-    public GameObject weapon;
-
-    public float aiCooldown = 1.0f;
-
-    private float timeWhenFired = 0.0f;
+    protected Vector3 bestDirection;
+    protected GameObject target;
     
 	// Use this for initialization
 	void Start () {
@@ -21,17 +18,38 @@ public class AISimple : MonoBehaviour {
         RunAI();
 	}
 
-    public virtual void RunAI() {}
-
-    public virtual void Move(Vector3 direction) { }
-
-    public virtual void Shoot(Vector2 direction)
+    public virtual void RunAI()
     {
-        Weapon wc = weapon.GetComponent<Weapon>();
-        if (Time.time >= timeWhenFired + aiCooldown)
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        if (players.Length == 0)
+            return;
+
+        GameObject targetPlayer = players[0];
+        Vector3 direction = new Vector3(100, 100, 100);
+
+        List<Vector3> dirs = new List<Vector3>();
+        foreach (GameObject p in players)
         {
-            wc.Fire(gameObject, transform.position, new Vector2(-direction.x, -direction.y));
-            timeWhenFired = Time.time;
+            Vector3 dir = transform.position - p.transform.position;
+            //dirs.Add(dir);
+
+            // Pick closest direction.
+            if (dir.magnitude < direction.magnitude)
+            {
+                direction = dir;
+                targetPlayer = p;
+            }
         }
+
+        target = targetPlayer;
+        bestDirection = direction;
+
+        // Call move.
+        Move();
     }
+
+    public virtual void Move() { }
+
+
 }
