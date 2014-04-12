@@ -19,6 +19,7 @@ public class Player : controller {
 	Quaternion currentAim = Quaternion.identity;
 	
 	float currentAngle = 0.0f;
+    bool flipped = true;
 
 	// Use this for initialization
 	void Start () {
@@ -29,15 +30,6 @@ public class Player : controller {
 	// Update is called once per frame
 	void Update () {
 	
-		GameObject arm = GameObject.FindGameObjectWithTag("Arm");
-
-		float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
-
-		Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
-		currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
-
-		arm.transform.rotation = currentAim;	
-
 		// Level bounds check.
 		Vector3 position = transform.position;
 		if(position.x < Level.LevelWidth && position.x > 0 
@@ -46,7 +38,22 @@ public class Player : controller {
 				
 		}
 
-		base.UpdateInput ();
+		base.UpdateInput ();	
+	}
+
+	void RotateArm()
+	{
+        if (aimVec != Vector3.zero)
+        {
+            GameObject arm = GameObject.FindGameObjectWithTag("Arm");
+
+            float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
+
+            Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
+            currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
+
+            arm.transform.rotation = currentAim;          
+        }
 	}
 
 	void OnCollisionEnter2D(Collision2D hit)
@@ -64,6 +71,7 @@ public class Player : controller {
 		case JOYSTICKBUTTON.JUMP: 
 		{
 			Jump();
+			animation.Play("Jumping");
 			break;
 		}
 		case JOYSTICKBUTTON.FIRE: 
@@ -85,37 +93,60 @@ public class Player : controller {
 		}
 	}
 
-	protected override void ProcessState(STATE State)
+	protected override void ProcessState()
 	{
-		switch (State) {
-		case STATE.MOVINGLEFT:
+		switch (base.currentState) {
+			case STATE.RUNNINGLEFT:
+			{
+				animation.CrossFade ("Running", 0.3f);
+                if (previousState != currentState && previousState != STATE.WALKINGLEFT)
 				{
-						//animation.CrossFade ("Running", 0.3f);
-						if(previousState != State)
-						{
-							transform.Rotate (0, 180, 0);
-						}
-						previousState = State;	
-						break;
+					transform.Rotate (0, 180, 0);
 				}
-		case STATE.MOVINGRIGHT:
-				{
-						//animation.CrossFade ("Running", 0.3f);
-						if(previousState != State)
-						{
-							transform.Rotate (0, 180, 0);
-						}
-						previousState = State;
-						break;
-				}
-		default:
-				{
-						//animation.CrossFade ("Idle", 0.3f);
-						break;
-				}
+                previousState = currentState;	
+				break;
 			}
-
+			case STATE.WALKINGLEFT:
+			{
+				animation.CrossFade ("Walking", 0.3f);
+                if (previousState != currentState && previousState != STATE.RUNNINGLEFT)
+				{
+					transform.Rotate (0, 180, 0);
+				}
+                previousState = currentState;	
+				break;
+			}
+			case STATE.RUNNINGRIGHT:
+			{
+				animation.CrossFade ("Running", 0.3f);
+                if (previousState != currentState && previousState != STATE.WALKINGRIGHT)
+				{
+					transform.Rotate (0, 180, 0);
+				}
+                previousState = currentState;
+				break;
+			}
+			case STATE.WALKINGRIGHT:
+			{
+				animation.CrossFade ("Walking", 0.3f);
+                if (previousState != currentState && previousState != STATE.RUNNINGRIGHT)
+				{
+					transform.Rotate (0, 180, 0);
+				}
+                previousState = currentState;	
+				break;
+			}
+			default:
+			{
+				animation.CrossFade ("Idle", 0.3f);
+				break;
+			}
 		}
+		
+		
+		
+		RotateArm();	
+	}
 
 	void Shoot()
 	{

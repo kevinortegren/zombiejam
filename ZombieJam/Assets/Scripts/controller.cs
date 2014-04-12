@@ -11,13 +11,17 @@ public class controller : MonoBehaviour {
 	
 	protected enum STATE
 	{
-		MOVINGLEFT,
-		MOVINGRIGHT,
-		IDLESTATE,
+		RUNNINGLEFT,
+		RUNNINGRIGHT,
+		WALKINGLEFT,
+		WALKINGRIGHT,
+		IDLESTATE
 	}
 	
 	public int JoyStickNum = 0;
-	protected STATE previousState = STATE.MOVINGRIGHT;
+
+	protected STATE previousState = STATE.RUNNINGRIGHT;
+    protected STATE currentState = STATE.RUNNINGRIGHT;
 
 	protected Vector3 aimVec;
 
@@ -33,17 +37,41 @@ public class controller : MonoBehaviour {
 		aimVec = new Vector3 (Input.GetAxis ("HorizontalRight" + JoyStickNum.ToString()), Input.GetAxis ("VerticalRight" + JoyStickNum.ToString()), 0 );
 		aimVec = Vector3.Normalize(aimVec);
 
-		if (deltaPos.x > 0) 
+		if (deltaPos.x > 0.0)
 		{
-			ProcessState (STATE.MOVINGRIGHT);
+			if(deltaPos.x > 0.1)
+			{
+                currentState = STATE.RUNNINGRIGHT;
+
+				//ProcessState (STATE.RUNNINGRIGHT);
+			}
+			else
+			{
+                currentState = STATE.WALKINGRIGHT;
+
+				//ProcessState (STATE.WALKINGRIGHT);
+			}
 		} 
-		else if (deltaPos.x < 0) 
+		else if (deltaPos.x < 0.0) 
 		{
-			ProcessState (STATE.MOVINGLEFT);
-		} 
+			if(deltaPos.x < -0.1)
+			{
+                currentState = STATE.RUNNINGLEFT;
+
+				//ProcessState (STATE.RUNNINGLEFT);
+			}
+			else
+			{
+                currentState = STATE.WALKINGLEFT;
+
+				//ProcessState ( STATE.WALKINGLEFT);
+			}
+		}
 		else 
 		{
-			ProcessState (STATE.IDLESTATE);
+            currentState = STATE.IDLESTATE;
+
+			//ProcessState (STATE.IDLESTATE);
 		}
 
 		if (Input.GetButtonDown ("Jump" + JoyStickNum.ToString())) 
@@ -56,10 +84,12 @@ public class controller : MonoBehaviour {
 			ProcessInput(JOYSTICKBUTTON.FIRE);
 		}
 
-		transform.position += deltaPos; 
+		transform.position += deltaPos;
+
+        ProcessState();
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
 
-	protected virtual void ProcessState(STATE State) {}
+	protected virtual void ProcessState() {}
 }
