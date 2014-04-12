@@ -73,6 +73,8 @@ public class Player : controller {
         else
         {
             base.UpdateInput();
+
+            Shoot();
         }
 	}
 
@@ -109,7 +111,7 @@ public class Player : controller {
 		    }
 		    case JOYSTICKBUTTON.FIRE: 
 		    {
-			    Shoot();
+			    
 			    break;
 		    }
 		    default:
@@ -204,16 +206,21 @@ public class Player : controller {
 	void Shoot()
 	{
 		Weapon weapon = activeWeapon.GetComponent<Weapon>();
-	
-		if(Time.time >= timeWhenFired + weapon.cooldown)
-		{
-			// If the controller has an aiming direction.
-			if(aimVec != Vector3.zero)
+
+        if (aimVec != Vector3.zero)
+        {
+		    if(Time.time >= timeWhenFired + weapon.cooldown)
+		    {
+			    // If the controller has an aiming direction.
+			
 				latestAimingDirection = aimVec;
 
-            weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
-			timeWhenFired = Time.time;
-		}
+                print(latestAimingDirection);
+
+                weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+			    timeWhenFired = Time.time;
+		    }
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D other)
