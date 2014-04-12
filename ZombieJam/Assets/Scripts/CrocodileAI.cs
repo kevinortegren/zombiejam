@@ -35,7 +35,11 @@ public class CrocodileAI : AISimple {
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
+        if (players.Length == 0)
+            return;
+
         Vector3 bestDirection = new Vector3(100, 100, 100);
+        GameObject targetPlayer = players[0];
 
         List<Vector3> dirs = new List<Vector3>();
         foreach (GameObject p in players)
@@ -47,6 +51,7 @@ public class CrocodileAI : AISimple {
             if (dir.magnitude < bestDirection.magnitude)
             {
                 bestDirection = dir;
+                targetPlayer = p;
             }
         }
 
@@ -54,6 +59,8 @@ public class CrocodileAI : AISimple {
         {
             // Attack Attack!
             animation.CrossFade("AligatorAttacking", 0.3f);
+
+            targetPlayer.GetComponent<Life>().TakeDamage(0.5f);
         }
         else
         {

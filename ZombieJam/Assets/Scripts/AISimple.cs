@@ -30,7 +30,7 @@ public class AISimple : MonoBehaviour {
         Weapon wc = weapon.GetComponent<Weapon>();
         if (Time.time >= timeWhenFired + aiCooldown)
         {
-            wc.Fire(transform.position, new Vector2(-direction.x, -direction.y));
+            wc.Fire(gameObject, transform.position, new Vector2(-direction.x, -direction.y));
             timeWhenFired = Time.time;
         }
     }

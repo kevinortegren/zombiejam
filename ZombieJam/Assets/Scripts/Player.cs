@@ -167,7 +167,7 @@ public class Player : controller {
 			if(aimVec != Vector3.zero)
 				latestAimingDirection = aimVec;
 
-            weapon.Fire(hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+            weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}
