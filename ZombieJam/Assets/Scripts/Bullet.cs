@@ -6,11 +6,14 @@ public class Bullet : MonoBehaviour {
 	public Vector2 direction = new Vector2(1,0);
 	public float force = 1000.0f;
     public float lifetime = 10.0f;
+    public float damage = 30.0f;
     
     private float aliveTime = 0.0f;
+    private GameObject owner;
 
-	public void Launch(Vector2 direction)
+	public void Launch(GameObject owner, Vector2 direction)
 	{
+        this.owner = owner;
 		GetComponent<Rigidbody2D>().AddForce(direction * force);
 	}
 
@@ -32,10 +35,14 @@ public class Bullet : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag != "Player")
+        // Do not collide with self.
+        if (other.gameObject.tag != owner.tag)
         {
-            print(other.gameObject.tag);
-           
+            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "PLayer")
+            {
+                other.gameObject.GetComponent<Life>().TakeDamage(damage);
+            }
+
             Destroy(gameObject);
         }
     }
