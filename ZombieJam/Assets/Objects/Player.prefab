@@ -595,6 +595,8 @@ MonoBehaviour:
   JoyStickNum: 1
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
   jumpForce: 1000
+  qstate: 0
+  guitext: {fileID: 100000, guid: 0bc218476617dfc49958400c31d995fb, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
