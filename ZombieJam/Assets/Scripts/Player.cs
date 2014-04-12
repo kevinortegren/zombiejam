@@ -25,6 +25,14 @@ public class Player : controller {
 	// Update is called once per frame
 	void Update () {
 	
+		GameObject arm = GameObject.FindGameObjectWithTag("Arm");
+
+		float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
+
+		Quaternion quat = Quaternion.Euler(new Vector3(0, 0, angle));
+
+		arm.transform.rotation = quat;
+
 		// Level bounds check.
 		Vector3 position = transform.position;
 		if(position.x < Level.LevelWidth && position.x > 0 
@@ -77,7 +85,7 @@ public class Player : controller {
 		switch (State) {
 		case STATE.MOVINGLEFT:
 				{
-						animation.CrossFade ("Running", 0.3f);
+						//animation.CrossFade ("Running", 0.3f);
 						if(previousState != State)
 						{
 							transform.Rotate (0, 180, 0);
@@ -87,7 +95,7 @@ public class Player : controller {
 				}
 		case STATE.MOVINGRIGHT:
 				{
-						animation.CrossFade ("Running", 0.3f);
+						//animation.CrossFade ("Running", 0.3f);
 						if(previousState != State)
 						{
 							transform.Rotate (0, 180, 0);
@@ -97,7 +105,7 @@ public class Player : controller {
 				}
 		default:
 				{
-						animation.CrossFade ("Idle", 0.3f);
+						//animation.CrossFade ("Idle", 0.3f);
 						break;
 				}
 			}
@@ -115,7 +123,7 @@ public class Player : controller {
 				latestAimingDirection = aimVec;		
 				
 		
-			weapon.Fire(transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+			weapon.Fire(transform.position + latestAimingDirection * 1.5f, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}
