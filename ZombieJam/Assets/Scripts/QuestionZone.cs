@@ -9,9 +9,14 @@ public class QuestionZone : MonoBehaviour {
     private string question;
     private string[] answers;
 
+    private int nrPlayers;
+
     // Use this for initialization
     void Start() {
-        collectedAnswers = new int[Global.numberOfPlayers];
+
+        nrPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+
+        collectedAnswers = new int[nrPlayers];
         correctAnswer = 0;
         question = "Testion";
 
@@ -39,10 +44,11 @@ public class QuestionZone : MonoBehaviour {
 
     public void SubmitAnswer(int answer, int player)
     {
+       
         collectedAnswers[player] = answer;
         numberOfAnswers++;
 
-        if (numberOfAnswers == Global.numberOfPlayers - 1)
+        if (numberOfAnswers == nrPlayers)
         {
             AnswersDone();
         }
@@ -59,7 +65,11 @@ public class QuestionZone : MonoBehaviour {
             {
                 //playah.GetComponent<Player>().AwardScore(200);
                 //set player state to moving
+
+                print("Correct answer!");
             }
+
+            playah.GetComponent<Player>().Unlock();
         }
     }
 }

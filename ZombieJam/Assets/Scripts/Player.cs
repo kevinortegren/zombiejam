@@ -30,6 +30,7 @@ public class Player : controller {
 
     private QUESTIONSTATE qstate = QUESTIONSTATE.NONE;
 
+    private GameObject currentQZone;
 
 	Quaternion currentAim = Quaternion.identity;
 
@@ -129,14 +130,20 @@ public class Player : controller {
         {
             case JOYSTICKBUTTON.JUMP:
                 {
-                    print("A");
                     qstate = QUESTIONSTATE.WAITING;
+                    currentQZone.GetComponent<QuestionZone>().SubmitAnswer(0, JoyStickNum - 1);
+
+                    print("A");
+                    
                     break;
                 }
             case JOYSTICKBUTTON.FIRE:
                 {
-                    print("B");
                     qstate = QUESTIONSTATE.WAITING;
+                    currentQZone.GetComponent<QuestionZone>().SubmitAnswer(1, JoyStickNum - 1);
+
+                    print("B");
+                    
                     break;
                 }
             default:
@@ -152,6 +159,14 @@ public class Player : controller {
 			state = PLAYERSTATE.AIR;
 		}
 	}
+
+    public void Unlock()
+    {
+        if (qstate == QUESTIONSTATE.WAITING)
+        {
+            //qstate = QUESTIONSTATE.NONE;
+        }
+    }
 
 	protected override void ProcessState()
 	{
@@ -229,10 +244,12 @@ public class Player : controller {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Test")
+        if (other.gameObject.tag == "QuestionZones")
         {
             if (qstate == QUESTIONSTATE.NONE)
             {
+                currentQZone = other.gameObject;
+
                 print("Enter zone.");
                 qstate = QUESTIONSTATE.INTRO;
             }
