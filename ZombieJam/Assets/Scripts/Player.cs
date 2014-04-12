@@ -11,20 +11,33 @@ public class Player : controller {
 	}
 
 	public GameObject activeWeapon;
+    public float jumpForce = 1000;
 
 	private float timeWhenFired = 0.0f;
 	private Vector3 latestAimingDirection = Vector3.right;
 	private PLAYERSTATE state = PLAYERSTATE.GROUND;
 
 	Quaternion currentAim = Quaternion.identity;
-	
-	float currentAngle = 0.0f;
-    bool flipped = true;
+
+    private Transform shoulder;
+    private Transform hand;
 
 	// Use this for initialization
 	void Start () {
-	
 
+        Transform[] joints = gameObject.GetComponentsInChildren<Transform>();
+        foreach (Transform t in joints)
+        {
+            if (t.name == "RightHand")
+            {
+                hand = t;
+            }
+
+            if (t.name == "RightShoulder")
+            {
+                shoulder = t;
+            }
+        }
 	}
 	
 	// Update is called once per frame
@@ -45,14 +58,12 @@ public class Player : controller {
 	{
         if (aimVec != Vector3.zero)
         {
-            GameObject arm = GameObject.FindGameObjectWithTag("Arm");
-
             float angle = (float)Math.Atan2(aimVec.y, aimVec.x) * Mathf.Rad2Deg;
 
             Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
             currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
 
-            arm.transform.rotation = currentAim;          
+            shoulder.rotation = currentAim;          
         }
 	}
 
@@ -88,7 +99,7 @@ public class Player : controller {
 	{
 		if(state == PLAYERSTATE.GROUND)
 		{
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 200));
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 			state = PLAYERSTATE.AIR;
 		}
 	}
@@ -157,13 +168,7 @@ public class Player : controller {
 			if(aimVec != Vector3.zero)
 				latestAimingDirection = aimVec;
 
-            // TODO: Use weapon instead of hand.
-            GameObject arm = GameObject.FindGameObjectWithTag("Hand");
-
-            //print(arm.transform.position);
-            //print(transform.position);
-
-            weapon.Fire(arm.transform.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
+            weapon.Fire(hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			timeWhenFired = Time.time;
 		}
 	}

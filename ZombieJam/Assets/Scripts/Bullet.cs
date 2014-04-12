@@ -30,8 +30,13 @@ public class Bullet : MonoBehaviour {
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.tag != "Player")
+        {
+            print(other.gameObject.tag);
+           
+            Destroy(gameObject);
+        }
     }
 }

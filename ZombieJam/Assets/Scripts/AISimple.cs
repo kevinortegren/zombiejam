@@ -17,32 +17,15 @@ public class AISimple : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
-        List<Vector3> dirs = new List<Vector3>();
-
-        foreach(GameObject p in players)
-        {
-            Vector3 dir = transform.position - p.transform.position;
-            dirs.Add(dir);   
-        }
-
-        int i = Random.Range(0, dirs.Count);
-
-        Vector2 asd = dirs[i];
-
-        Shoot(new Vector2(dirs[i].x, dirs[i].y));
-
-        Move(new Vector3(asd.x, asd.y, 0.0f));
+        RunAI();
 	}
 
-    void Move(Vector3 direction)
-    {
-        transform.position -= direction * Time.deltaTime * 0.1f;
-    }
+    public virtual void RunAI() {}
 
-    void Shoot(Vector2 direction)
+    public virtual void Move(Vector3 direction) { }
+
+    public virtual void Shoot(Vector2 direction)
     {
         Weapon wc = weapon.GetComponent<Weapon>();
         if (Time.time >= timeWhenFired + aiCooldown)
