@@ -55,21 +55,37 @@ public class Player : controller {
             case 1:
             {
                 gtext.color = Color.red;
+                
+                SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+                r.material.color = Color.red;
+
                 break;
             }
             case 2:
             {
                 gtext.color = Color.blue;
+
+                SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+                r.material.color = Color.blue;
+
                 break;
             }
             case 3:
             {
                 gtext.color = Color.green;
+
+                SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+                r.material.color = Color.green;
+
                 break;
             }
             case 4:
             {
                 gtext.color = Color.yellow;
+
+                SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+                r.material.color = Color.yellow;
+
                 break;
             }
             default:
@@ -93,6 +109,8 @@ public class Player : controller {
 	
 	// Update is called once per frame
 	void Update () {
+
+
 
         if (qstate == QUESTIONSTATE.INTRO)
         {
