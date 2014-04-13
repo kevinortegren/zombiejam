@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &670619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,7 +1605,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 10}
+  m_Size: {x: 1, y: 10}
   m_Center: {x: 0, y: 0}
 --- !u!1001 &22330520
 Prefab:
@@ -4427,6 +4428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &99563009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7844,6 +7846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &183622739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8409,6 +8412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &197373015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8687,6 +8691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &208017409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11611,6 +11616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &327275058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15863,7 +15869,7 @@ GameObject:
   - 137: {fileID: 379967555}
   m_Layer: 8
   m_Name: polySurface63
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21108,6 +21114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &476784282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24914,7 +24921,7 @@ GameObject:
   - 137: {fileID: 592059274}
   m_Layer: 8
   m_Name: polySurface63
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26614,7 +26621,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 10}
+  m_Size: {x: 1, y: 10}
   m_Center: {x: 0, y: 0}
 --- !u!1 &607960155
 GameObject:
@@ -35142,6 +35149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!61 &868956623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38148,7 +38156,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 10}
+  m_Size: {x: 1, y: 10}
   m_Center: {x: 0, y: 0}
 --- !u!1 &938573086
 GameObject:
@@ -38699,6 +38707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &946313444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39413,6 +39422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &967508727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42047,6 +42057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &1081467999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63041,6 +63052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &1656817716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68557,6 +68569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!114 &1817029029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72962,6 +72975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 100000, guid: 0ce322fe8cf7471449c9504d60bb293d, type: 2}
 --- !u!61 &1941973957
 BoxCollider2D:
   m_ObjectHideFlags: 0
