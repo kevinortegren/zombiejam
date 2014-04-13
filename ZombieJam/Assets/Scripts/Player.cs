@@ -42,10 +42,11 @@ public class Player : controller {
     public GameObject guitext;
 
     private GUIText gtext;
+    public Color privColor;
 
 	// Use this for initialization
 	void Start () {
-
+        Global.playerList.Add(this);
         GameObject gobject = (GameObject)Instantiate(guitext, transform.position, transform.rotation);
         gtext = gobject.GetComponent<GUIText>();
         gtext.transform.position = new Vector3(0.15f * (float)(JoyStickNum - 1.0f), 0.05f, 0.0f);
@@ -54,7 +55,7 @@ public class Player : controller {
         {
             case 1:
             {
-                gtext.color = Color.red;
+                privColor = gtext.color = Color.red;
                 
                 SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
                 r.material.color = Color.red;
@@ -63,7 +64,7 @@ public class Player : controller {
             }
             case 2:
             {
-                gtext.color = Color.blue;
+                privColor = gtext.color = Color.blue;
 
                 SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
                 r.material.color = Color.blue;
@@ -72,7 +73,7 @@ public class Player : controller {
             }
             case 3:
             {
-                gtext.color = Color.green;
+                privColor = gtext.color = Color.green;
 
                 SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
                 r.material.color = Color.green;
@@ -81,7 +82,7 @@ public class Player : controller {
             }
             case 4:
             {
-                gtext.color = Color.yellow;
+                privColor = gtext.color = Color.yellow;
 
                 SkinnedMeshRenderer r = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
                 r.material.color = Color.yellow;
@@ -304,11 +305,19 @@ public class Player : controller {
                 }
             }
         }
+        else if (other.gameObject.tag == "EndLevel")
+        {
+            Application.LoadLevel(4);
+        }
     }
 
     public void AddScore(int p_score)
     {
         score += p_score;
         gtext.text = score.ToString();
+    }
+    public int GetScore()
+    {
+        return score;
     }
 }
