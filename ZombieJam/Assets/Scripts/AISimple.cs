@@ -6,7 +6,11 @@ public class AISimple : MonoBehaviour {
 
     protected Vector3 bestDirection;
     protected GameObject target;
-    
+
+    public float reach;
+    public bool guard = false;
+    public float speed = 0.1f;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -25,7 +29,7 @@ public class AISimple : MonoBehaviour {
         if (players.Length == 0)
             return;
 
-        GameObject targetPlayer = players[0];
+        GameObject targetPlayer = null;
         Vector3 direction = new Vector3(100, 100, 100);
 
         List<Vector3> dirs = new List<Vector3>();
@@ -37,6 +41,7 @@ public class AISimple : MonoBehaviour {
             // Pick closest direction.
             if (dir.magnitude < direction.magnitude)
             {
+                print("New Target " + p.GetComponent<Player>().JoyStickNum);
                 direction = dir;
                 targetPlayer = p;
             }
@@ -44,9 +49,12 @@ public class AISimple : MonoBehaviour {
 
         target = targetPlayer;
         bestDirection = direction;
+       
+        if(!guard)
 
         // Call move.
         Move();
+
     }
 
     public virtual void Move() { }

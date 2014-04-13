@@ -28,7 +28,6 @@ public class QuestionZone : MonoBehaviour {
     private float time = 0.0f;
     private float fsize = 0.0f;
 
-    public GameObject win;
     public GameObject loose;
 
     // Use this for initialization
@@ -230,7 +229,6 @@ public class QuestionZone : MonoBehaviour {
 
         if (i == nrPlayers)
         {
-            //Instantiate(win);
             ShowEndText(true);
         }
         else

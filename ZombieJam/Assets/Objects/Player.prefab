@@ -529,7 +529,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100030}
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JoyStickNum: 1
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
-  jumpForce: 1000
+  jumpForce: 50000
   qstate: 0
   guitext: {fileID: 100000, guid: 0bc218476617dfc49958400c31d995fb, type: 2}
 --- !u!114 &11400002
