@@ -29,7 +29,7 @@ public class CrocodileAI : AISimple {
             animation.CrossFade("AligatorAttacking", 0.3f);
 
             //target.GetComponent<Life>().TakeDamage(0.5f);
-            target.GetComponent<Player>().AddScore(-100);
+            target.GetComponent<Player>().AddScore(-1);
         }
         else
         {

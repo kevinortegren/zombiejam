@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2309800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4989466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 18763767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1653,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 27704121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1737,7 +1737,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 29568966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1766,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 31203845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,7 +2318,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 49948744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2568,7 +2568,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 55963363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2595,7 +2595,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 56409872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2650,7 +2650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -2762,7 +2762,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 62526832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2788,7 +2788,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 62549005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3022,7 +3022,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 66946348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3317,7 +3317,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 78513057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3371,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 78893444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3432,7 +3432,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4140,7 +4140,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4445,7 +4445,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 110763625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4775,7 +4775,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 122334984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4876,16 +4876,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f7fb302eb8904cadcde03a1696df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: {fileID: 100034, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
-  count: 2
+  enemyType: {fileID: 100034, guid: 7fe5732faf2eaa849a3c813c3e9f5dba, type: 2}
+  count: 4
 --- !u!4 &123711494
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123711492}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.3878822, y: -86.6526642, z: 154.283295}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 30.0187473, y: -86.6526642, z: 154.283295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4897,7 +4897,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 123895764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +4925,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 125139197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5106,7 +5106,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 129418719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5265,7 +5265,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 134106821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5346,7 +5346,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 134537847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5480,7 +5480,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 140450047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5580,7 +5580,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 143281393}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5664,7 +5664,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 145556980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6034,7 +6034,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 156145757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6060,7 +6060,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 157335655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7395,7 +7395,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 169181101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7500,7 +7500,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 179761069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7790,7 +7790,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 188077688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7919,7 +7919,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 192938555}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8120,7 +8120,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 199440487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8289,7 +8289,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 207883425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8534,7 +8534,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -8660,7 +8660,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 224417079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8828,7 +8828,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 228397218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8950,7 +8950,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 233376735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8977,7 +8977,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 235085599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9046,7 +9046,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 238818346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9132,7 +9132,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9157,7 +9157,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 242641345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9524,7 +9524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -9597,7 +9597,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 261466450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9848,7 +9848,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 276033362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10142,7 +10142,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -10429,7 +10429,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -10800,7 +10800,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 310340562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10826,7 +10826,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 313969514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10932,7 +10932,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -10968,7 +10968,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 321408575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10994,7 +10994,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 323655054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11291,7 +11291,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 327427785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11405,7 +11405,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -13307,7 +13307,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 347443440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14489,7 +14489,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 353486616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14588,7 +14588,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 354187380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15139,7 +15139,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 367511451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15394,7 +15394,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 379967554}
   - 137: {fileID: 379967555}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16080,7 +16080,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 392641049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16670,7 +16670,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405280975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16828,7 +16828,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413227733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18090,7 +18090,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420676657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18445,7 +18445,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434332304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18474,7 +18474,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436462701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18833,7 +18833,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451098029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18860,7 +18860,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453032343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18940,7 +18940,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461627645}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20479,7 +20479,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468682678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20754,7 +20754,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476389124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20897,7 +20897,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478757541}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20923,7 +20923,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478993685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21066,7 +21066,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487316700}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21225,7 +21225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -21323,7 +21323,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494789034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21402,7 +21402,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497699029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21539,7 +21539,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 503788983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21679,7 +21679,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 504329117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21705,7 +21705,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 506869826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21862,7 +21862,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 511274196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22054,7 +22054,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 519435469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22080,7 +22080,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 519489598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22486,7 +22486,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 541613451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22512,7 +22512,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 544038943}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22581,7 +22581,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 545238321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22668,7 +22668,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 547505741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23116,7 +23116,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 560496412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23233,7 +23233,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -23310,7 +23310,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 564714103}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23477,7 +23477,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 569014859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23727,7 +23727,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 574323572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23922,7 +23922,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 580015395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24044,7 +24044,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 581719530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24194,7 +24194,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 583412678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24263,7 +24263,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 585398510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24290,7 +24290,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 586176468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24343,7 +24343,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 588313869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24369,7 +24369,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 588469058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24475,7 +24475,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -24512,7 +24512,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 592059273}
   - 137: {fileID: 592059274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24663,7 +24663,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 593840607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24891,7 +24891,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 601959400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26557,7 +26557,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 617675064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26635,7 +26635,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 621267952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26777,7 +26777,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 622463192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26803,7 +26803,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 627264282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26829,7 +26829,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 627390367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26937,7 +26937,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 632631141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27107,7 +27107,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 638581202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27352,7 +27352,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 650683367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27379,7 +27379,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 652398821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27463,7 +27463,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 658746869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28063,7 +28063,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 674346735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28399,7 +28399,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 679004811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28425,7 +28425,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 679645061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28494,7 +28494,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 681912188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28563,7 +28563,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 684243888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28668,7 +28668,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 685180227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28789,7 +28789,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 689207311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29097,7 +29097,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 700005394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29219,7 +29219,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 705971075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29303,7 +29303,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 708189787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29372,7 +29372,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 710700311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29456,7 +29456,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 719599201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29482,7 +29482,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 720052408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AligatorV1ToMaya:ZBrush_defualt_group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29767,7 +29767,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 726922073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30131,7 +30131,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 749528258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30158,7 +30158,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 752006254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30184,7 +30184,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 753082249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31073,7 +31073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -31174,7 +31174,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 778985838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31517,7 +31517,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -31726,7 +31726,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 802654825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31854,7 +31854,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 809427804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31880,7 +31880,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 809850049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31908,7 +31908,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 810029348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32218,7 +32218,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 814878811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32244,7 +32244,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 815688597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32389,7 +32389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 818856165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32537,7 +32537,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 829105282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32727,7 +32727,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 833155400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32841,7 +32841,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 834786707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33428,7 +33428,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 846910075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33585,7 +33585,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 853847044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34944,7 +34944,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 863044273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35099,7 +35099,7 @@ GameObject:
   - 50: {fileID: 868956624}
   - 61: {fileID: 868956623}
   - 114: {fileID: 868956622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Croco
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -35266,7 +35266,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 869161832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35422,7 +35422,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 873257680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35800,7 +35800,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 881660475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35912,7 +35912,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 897838640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35996,7 +35996,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 898864231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36149,7 +36149,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 900964854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36261,7 +36261,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 908806098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36412,7 +36412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -36667,7 +36667,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 921897053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36980,7 +36980,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 930582963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37007,7 +37007,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 931913717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37077,7 +37077,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 936716119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38390,7 +38390,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -38426,7 +38426,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 941306881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38513,7 +38513,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 942434029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38738,7 +38738,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 947401384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39157,7 +39157,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 957761294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40499,7 +40499,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1018177454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40633,7 +40633,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1020994669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40963,7 +40963,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1032737091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41143,7 +41143,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1036555271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42413,7 +42413,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -42692,7 +42692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -42785,7 +42785,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1095772357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42811,7 +42811,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1097210595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42840,7 +42840,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1102572328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42866,7 +42866,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1105848049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42893,7 +42893,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1107256325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42947,7 +42947,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1109080362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43404,7 +43404,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -43429,7 +43429,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1129650968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43455,7 +43455,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1132068128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43583,7 +43583,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1135574509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44168,7 +44168,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1149993722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44246,7 +44246,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1154140198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44316,7 +44316,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1161163137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44608,7 +44608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -44905,7 +44905,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1175483074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45672,7 +45672,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1197070953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45797,7 +45797,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1200561032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47110,7 +47110,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1210178549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47158,7 +47158,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -47221,7 +47221,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1215579805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47333,7 +47333,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1219045949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47518,7 +47518,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1227487879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49212,7 +49212,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1248127028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49822,7 +49822,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1267894908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50147,7 +50147,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1276257342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50274,7 +50274,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1279162891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50353,7 +50353,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1281025970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51425,7 +51425,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1312943956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51532,7 +51532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -51613,7 +51613,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1319724914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52188,7 +52188,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1331032981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52214,7 +52214,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1331379156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52299,7 +52299,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1332377187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53114,7 +53114,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1358072462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53141,7 +53141,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1358113349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53168,7 +53168,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1358881930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53195,7 +53195,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1359227341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53305,7 +53305,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1364699857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53426,7 +53426,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1372252344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53452,7 +53452,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1373395228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53543,7 +53543,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -53631,7 +53631,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1377448080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53938,7 +53938,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1381953503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AligatorV1ToMaya:ZBrush_defualt_group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54149,7 +54149,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1387640941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54328,7 +54328,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1394118379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54494,7 +54494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -54625,7 +54625,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1401091733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54706,7 +54706,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1403154424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54983,7 +54983,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1410493576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55075,7 +55075,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1411111248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55243,7 +55243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -55593,7 +55593,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1425758657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55619,7 +55619,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1428472779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55646,7 +55646,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1429870612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57296,7 +57296,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1454656760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57323,7 +57323,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1454953344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57617,7 +57617,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1464437184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57695,7 +57695,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1467066224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57722,7 +57722,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1468114636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57801,7 +57801,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1469690818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57857,7 +57857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -58046,7 +58046,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1477426798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58073,7 +58073,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1478767350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58112,7 +58112,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1478824129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58242,7 +58242,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1480915010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58763,7 +58763,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1488406950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58789,7 +58789,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1488448774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58868,7 +58868,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1491713907}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59205,7 +59205,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1505670783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59607,7 +59607,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1515087767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59776,7 +59776,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1521860172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60044,7 +60044,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1525522552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60071,7 +60071,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1526399789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60097,7 +60097,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1526914026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60207,7 +60207,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1529692633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60294,7 +60294,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1533291135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60320,7 +60320,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1533842768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60769,7 +60769,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1545526496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60847,7 +60847,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1547876031}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60928,7 +60928,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1556125692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61313,7 +61313,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1564314732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61339,7 +61339,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1566417014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61655,7 +61655,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1571407837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62363,7 +62363,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1592228323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62515,7 +62515,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1597429859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62600,7 +62600,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1598815373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62750,7 +62750,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1604084125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62906,7 +62906,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1612597072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62989,7 +62989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -63047,7 +63047,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1622072149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63100,7 +63100,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1627881426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63126,7 +63126,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1632890398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63152,7 +63152,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1633323909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63280,7 +63280,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1636049306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63422,7 +63422,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1646355481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63568,7 +63568,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -63737,7 +63737,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1657048913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63806,7 +63806,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1661300786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64259,7 +64259,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1672687273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64330,7 +64330,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1678117455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64411,7 +64411,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1680414017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64509,7 +64509,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1681611507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64537,7 +64537,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1682265667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65057,7 +65057,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1706591245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65227,7 +65227,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1713705088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65391,7 +65391,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1720129633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65658,7 +65658,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1727404052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65834,7 +65834,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1733944982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65944,7 +65944,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1734780546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65970,7 +65970,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1736530998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65997,7 +65997,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1739063175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66400,7 +66400,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1753923671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66507,7 +66507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 1
+  guard: 0
   speed: .300000012
   shootRange: 10
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
@@ -66536,7 +66536,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1759053007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66964,7 +66964,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -67123,7 +67123,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1773976964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67321,7 +67321,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -67424,7 +67424,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1783424103}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67632,7 +67632,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1784567840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67777,7 +67777,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1795280747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69512,7 +69512,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1816384299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69614,7 +69614,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -70217,7 +70217,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1835030997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70346,7 +70346,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1836568891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71001,7 +71001,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1861974042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71207,7 +71207,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1865604043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71389,7 +71389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1871749229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71623,7 +71623,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1882229774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71745,7 +71745,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1885201167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71771,7 +71771,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1885439743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72368,7 +72368,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1903903316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72550,7 +72550,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1908164012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72779,7 +72779,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
       propertyPath: guard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
@@ -73235,7 +73235,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1924365665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73294,7 +73294,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -73640,7 +73640,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1935526918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73767,7 +73767,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1936412606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73852,7 +73852,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1940675576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73896,7 +73896,7 @@ GameObject:
   - 50: {fileID: 1941973958}
   - 61: {fileID: 1941973957}
   - 114: {fileID: 1941973956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Croco
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -74474,7 +74474,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1951894808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74500,7 +74500,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1952376981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75767,14 +75767,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: {fileID: 100034, guid: 2e99c55773a6261439103f0e6fe153b7, type: 2}
-  count: 2
+  count: 4
 --- !u!4 &1961885509
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1961885507}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
   m_LocalPosition: {x: -84.1788025, y: -86.7753601, z: 154.422485}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -76335,7 +76335,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1984902146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76554,7 +76554,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1989725488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76638,7 +76638,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1992875018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77193,7 +77193,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2013111740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77346,7 +77346,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2023258695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77373,7 +77373,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2023455977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77636,7 +77636,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2027871080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77664,7 +77664,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2029711968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77744,7 +77744,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 452b429644f335b4aabbcfdb0b9927c3, type: 2}
+  - {fileID: 2100000, guid: b91db115f8415ff4786cb5bdb6a4e757, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -77963,7 +77963,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2036942415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78533,7 +78533,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2049932652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78560,7 +78560,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2051031513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79010,7 +79010,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2062704452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79037,7 +79037,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2063980287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79122,7 +79122,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2064700267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79426,7 +79426,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2079643837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79553,7 +79553,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2080978969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79580,7 +79580,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2082030553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79719,7 +79719,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2083338780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81560,7 +81560,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2101986928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81849,7 +81849,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2112012991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81876,7 +81876,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2114543516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81929,7 +81929,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2116106385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82008,7 +82008,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2121449839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82078,7 +82078,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2123133297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82147,7 +82147,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2127609103}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82173,7 +82173,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2133047261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82251,7 +82251,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2135484751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82406,7 +82406,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2141131422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82433,7 +82433,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2141314766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82797,7 +82797,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2146968736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
