@@ -44004,7 +44004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59643fc91da78244ca9ab2dfd6e049d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 11400000, guid: 57b1e1506ad0aae4892e55bc7f238887, type: 2}
+  player: {fileID: 11400000, guid: 12a709cd818d7424a898a96baf283853, type: 2}
 --- !u!4 &1144968596
 Transform:
   m_ObjectHideFlags: 0
