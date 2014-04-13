@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: bb073aed0c3bfc443b6c75179c7dba0d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body
+    100004: Hip
+    100006: LeftElbow
+    100008: LeftFoot
+    100010: LeftHand
+    100012: LeftKnee
+    100014: LeftShoulder
+    100016: LeftUpLeg
+    100018: pCube4
+    100020: polySurface14
+    100022: pSphere1
+    100024: RightElbow
+    100026: RightFoot
+    100028: RightHand
+    100030: RightKnee
+    100032: RightShoulder
+    100034: RightUpLeg
+    400000: //RootNode
+    400002: Body
+    400004: Hip
+    400006: LeftElbow
+    400008: LeftFoot
+    400010: LeftHand
+    400012: LeftKnee
+    400014: LeftShoulder
+    400016: LeftUpLeg
+    400018: pCube4
+    400020: polySurface14
+    400022: pSphere1
+    400024: RightElbow
+    400026: RightFoot
+    400028: RightHand
+    400030: RightKnee
+    400032: RightShoulder
+    400034: RightUpLeg
+    4300000: polySurface14
+    4300002: pSphere1
+    4300004: pCube4
+    7400000: BadGuyIdle
+    7400002: BadGuyWalking
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: pCube4
+    13700002: polySurface14
+    13700004: pSphere1
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BadGuyIdle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: pCube4
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      - path: pSphere1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: BadGuyWalking
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Body
+        weight: 1
+      - path: Hip/Body/LeftShoulder
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow
+        weight: 1
+      - path: Hip/Body/LeftShoulder/LeftElbow/LeftHand
+        weight: 1
+      - path: Hip/Body/RightShoulder
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow
+        weight: 1
+      - path: Hip/Body/RightShoulder/RightElbow/RightHand
+        weight: 1
+      - path: Hip/LeftUpLeg
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee
+        weight: 1
+      - path: Hip/LeftUpLeg/LeftKnee/LeftFoot
+        weight: 1
+      - path: Hip/RightUpLeg
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee
+        weight: 1
+      - path: Hip/RightUpLeg/RightKnee/RightFoot
+        weight: 1
+      - path: pCube4
+        weight: 1
+      - path: polySurface14
+        weight: 1
+      - path: pSphere1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
