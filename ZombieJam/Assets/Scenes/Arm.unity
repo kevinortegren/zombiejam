@@ -3428,6 +3428,7 @@ MonoBehaviour:
   jumpForce: 50000
   qstate: 0
   guitext: {fileID: 100000, guid: 0bc218476617dfc49958400c31d995fb, type: 2}
+  privColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &2014076738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3710,8 +3711,8 @@ MonoBehaviour:
   reach: 0
   guard: 1
   speed: .300000012
-  activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
   shootRange: 10
+  activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
 --- !u!111 &2147130354
 Animation:
   m_ObjectHideFlags: 0

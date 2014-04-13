@@ -34,13 +34,11 @@ public class BadGuyAI : AISimple {
         {
             if (t.name == "Blaster")
             {
-                print(gameObject.name + " blaster");
                 hand = t.GetChild(0);
             }
 
             if (t.name == "RightShoulder")
             {
-                print(gameObject.name + " shoulder");
                 shoulder = t;
             }
         }

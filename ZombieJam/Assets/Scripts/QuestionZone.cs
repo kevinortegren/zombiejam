@@ -125,7 +125,7 @@ public class QuestionZone : MonoBehaviour {
         {
             nrPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
 
-            print(nrPlayers);
+            //print(nrPlayers);
 
             waitingTM.renderer.enabled = true;
 

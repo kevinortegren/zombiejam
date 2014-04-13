@@ -13,7 +13,7 @@ public class Life : MonoBehaviour {
     public void TakeDamage(float health)
     {
         this.health -= health;
-        print(gameObject.name + " " + this.health + " hp.");
+        //print(gameObject.name + " " + this.health + " hp.");
         
     }
 
@@ -27,9 +27,7 @@ public class Life : MonoBehaviour {
 
 	public void Die()
 	{
-        print(gameObject.name + " died.");
-
         if(!(gameObject.tag == "Player"))
-        Destroy(gameObject);
+            Destroy(gameObject);
 	}
 }

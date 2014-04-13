@@ -35,7 +35,7 @@ public class AISimple : MonoBehaviour {
         GameObject targetPlayer = null;
         Vector3 direction = new Vector3(100, 100, 100);
 
-        List<Vector3> dirs = new List<Vector3>();
+        //List<Vector3> dirs = new List<Vector3>();
         foreach (GameObject p in players)
         {
             Vector3 dir = transform.position - p.transform.position;
@@ -44,7 +44,6 @@ public class AISimple : MonoBehaviour {
             // Pick closest direction.
             if (dir.magnitude < direction.magnitude)
             {
-                print("New Target " + p.GetComponent<Player>().JoyStickNum);
                 direction = dir;
                 targetPlayer = p;
             }
