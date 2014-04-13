@@ -98,6 +98,41 @@ public class QuestionBank : MonoBehaviour
 		q10.correctAnswer = 1;
 		Questions.Add(q10);
 
+		Question q11 = new Question();
+		q11.question = "Who are not a 3d tool?";
+		q11.answer1 = "Traxol";
+		q11.answer2 = "Maya";
+		q11.correctAnswer = 0;
+		Questions.Add(q11);
+
+		Question q12 = new Question();
+		q12.question = "Coffee originated from where?";
+		q12.answer1 = "Yemen";
+		q12.answer2 = "Turkey";
+		q12.correctAnswer = 0;
+		Questions.Add(q12);
+
+		Question q13 = new Question();
+		q13.question = "Playable character in super smash bros?";
+		q13.answer1 = "Mewtwo";
+		q13.answer2 = "Ness";
+		q13.correctAnswer = 1;
+		Questions.Add(q13);
+
+		Question q14 = new Question();
+		q14.question = "Latin word for fart?";
+		q14.answer1 = "Flatulus";
+		q14.answer2 = "Eruct";
+		q14.correctAnswer = 0;
+		Questions.Add(q14);
+
+		Question q15 = new Question();
+		q15.question = "Not a place in lord of the rings?";
+		q15.answer1 = "Minas thorath";
+		q15.answer2 = "Minas Morgul";
+		q15.correctAnswer = 1;
+		Questions.Add(q15);
+
         initied = true;   
     }
 
