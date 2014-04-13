@@ -51,11 +51,8 @@ public class Camera : MonoBehaviour {
 
         diff = maxX - minX;
         float diffY = maxY - minY;
-        print("MinX: " + minX + " MaxX: " + maxX + " Diff: " + diff);
+        //print("MinX: " + minX + " MaxX: " + maxX + " Diff: " + diff);
        // print("MinY: " + minY + " MaxY: " + maxY + " Diff: " + diffY);
-
-
-        
 
         if (back.transform && bottom.transform)
         {

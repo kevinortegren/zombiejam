@@ -78,6 +78,8 @@ public class QuestionZone : MonoBehaviour {
 
     void GenerateQuestion()
     {
+        nrPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+
         question = QuestionBank.GetQuestion();
         collectedAnswers = new int[nrPlayers];
 
@@ -121,6 +123,10 @@ public class QuestionZone : MonoBehaviour {
         }
         else if (inited)
         {
+            nrPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+
+            print(nrPlayers);
+
             waitingTM.renderer.enabled = true;
 
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
