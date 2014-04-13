@@ -19,6 +19,7 @@ public class controller : MonoBehaviour {
 	}
 	
 	public int JoyStickNum = 0;
+    public float moveSpeed = 40;
 
 	protected STATE previousState = STATE.RUNNINGRIGHT;
     protected STATE currentState = STATE.RUNNINGRIGHT;
@@ -137,7 +138,7 @@ public class controller : MonoBehaviour {
             deltaPos.x -= 0.1f;
         }     
 
-		transform.position += deltaPos;
+		transform.position += deltaPos * Time.deltaTime * moveSpeed;
 
         ProcessState();
 	}

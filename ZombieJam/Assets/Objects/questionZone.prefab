@@ -179,7 +179,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.04833889, y: 4.9210701, z: 0}
+  m_LocalPosition: {x: 22.0965157, y: -88.2332306, z: 156}
   m_LocalScale: {x: 2.39505219, y: 1.31699455, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -489,7 +489,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3, y: 10}
+  m_Size: {x: 1, y: 10}
   m_Center: {x: 0, y: 0}
 --- !u!102 &10200000
 TextMesh:
@@ -695,7 +695,6 @@ MonoBehaviour:
   inited: 0
   intro: 0
   outro: 0
-  win: {fileID: 0}
   loose: {fileID: 0}
 --- !u!198 &19800000
 ParticleSystem:
