@@ -593,7 +593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JoyStickNum: 1
-  activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
+  moveSpeed: 40
+  activeWeapon: {fileID: 100000, guid: 699932d1c98139d46a4663b1101514f1, type: 2}
   jumpForce: 50000
   qstate: 0
   guitext: {fileID: 100000, guid: 0bc218476617dfc49958400c31d995fb, type: 2}
@@ -610,6 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameObj: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -622,6 +624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!137 &13700000
 SkinnedMeshRenderer:

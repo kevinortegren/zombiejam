@@ -3242,6 +3242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &67869868
 Animator:
@@ -11002,7 +11004,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1671105678}
   m_GameObject: {fileID: 309953336}
-  m_Text: LB
+  m_Text: LT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -12015,7 +12017,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1400492478}
   m_GameObject: {fileID: 335598659}
-  m_Text: LB
+  m_Text: LT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -14971,7 +14973,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1835314481}
   m_GameObject: {fileID: 354140599}
-  m_Text: LB
+  m_Text: LT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -15192,7 +15194,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1671105678}
   m_GameObject: {fileID: 363321425}
-  m_Text: RB
+  m_Text: RT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -17030,7 +17032,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1835314481}
   m_GameObject: {fileID: 402064112}
-  m_Text: RB
+  m_Text: RT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -24193,7 +24195,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f953b4ee30ed49943948d092e17a99a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -89.7167587
+      value: -89.7892532
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f953b4ee30ed49943948d092e17a99a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27272,6 +27274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &627317215
 Animator:
@@ -30992,6 +30996,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &758695416
 Animator:
@@ -34927,6 +34933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &862431200
 Animator:
@@ -36494,6 +36502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &921509834
 Animator:
@@ -42744,6 +42754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1113232719
 Animator:
@@ -44569,7 +44581,7 @@ Transform:
   m_PrefabInternal: {fileID: 1914009371}
   m_GameObject: {fileID: 1169018122}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 109.779129, y: -89.8158875, z: 156.475861}
+  m_LocalPosition: {x: 115.5, y: -89.8158875, z: 156.475861}
   m_LocalScale: {x: .255369246, y: .255369246, z: .209999993}
   m_Children:
   - {fileID: 1120164762}
@@ -47315,7 +47327,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 3dac23aba33f5ea4890d4d21daae7190, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -71.141716
+      value: -72.8000031
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3dac23aba33f5ea4890d4d21daae7190, type: 3}
       propertyPath: m_LocalPosition.y
@@ -51517,6 +51529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1330855537
 Animator:
@@ -52448,7 +52462,7 @@ Transform:
   m_PrefabInternal: {fileID: 578091049}
   m_GameObject: {fileID: 1363881685}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.7775078, y: -89.7167587, z: 156.141479}
+  m_LocalPosition: {x: 21.7775078, y: -89.7892532, z: 156.141479}
   m_LocalScale: {x: .35027647, y: .35027647, z: .35027647}
   m_Children:
   - {fileID: 477504526}
@@ -54766,6 +54780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1425503783
 Animator:
@@ -58354,6 +58370,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1498350905
 Animator:
@@ -61549,6 +61567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1595608159
 Animator:
@@ -66967,7 +66987,7 @@ Transform:
   m_PrefabInternal: {fileID: 1233371276}
   m_GameObject: {fileID: 1804774042}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -71.141716, y: -89.7623901, z: 156.475861}
+  m_LocalPosition: {x: -72.8000031, y: -89.7623901, z: 156.475861}
   m_LocalScale: {x: .255369246, y: .255369246, z: .209999993}
   m_Children:
   - {fileID: 854039797}
@@ -68366,6 +68386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1815053922
 Animator:
@@ -68889,6 +68911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: .200000003
+  collisionDamage: 0
+  collisionCooldown: 0
   bullet: {fileID: 100000, guid: 2443433d9467d5a498c70ade024c8209, type: 2}
 --- !u!95 &1821550846
 Animator:
@@ -71827,7 +71851,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 3dac23aba33f5ea4890d4d21daae7190, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 109.779129
+      value: 115.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3dac23aba33f5ea4890d4d21daae7190, type: 3}
       propertyPath: m_LocalPosition.y
@@ -75510,7 +75534,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 1400492478}
   m_GameObject: {fileID: 1988615552}
-  m_Text: RB
+  m_Text: RT
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
