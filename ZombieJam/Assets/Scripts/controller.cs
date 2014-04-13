@@ -107,6 +107,26 @@ public class controller : MonoBehaviour {
             ProcessInput(JOYSTICKBUTTON.FIRE);
         }
 
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+
+        if (camera.GetComponent<Camera>().diff > 20.0f)
+        {
+            if (gameObject == camera.GetComponent<Camera>().back)
+            {
+                if (deltaPos.x < 0)
+                {
+                    deltaPos.x = 0;
+                }
+            }
+            else if (gameObject == camera.GetComponent<Camera>().front)
+            {
+                if (deltaPos.x > 0)
+                {
+                    deltaPos.x = 0;
+                }
+            }
+        }
+        
         if (Input.GetKey(KeyCode.RightArrow))
         {
             deltaPos.x += 0.1f;
@@ -115,7 +135,7 @@ public class controller : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             deltaPos.x -= 0.1f;
-        }
+        }     
 
 		transform.position += deltaPos;
 

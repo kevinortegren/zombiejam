@@ -8,16 +8,16 @@ public class SpawnEnemy : MonoBehaviour {
 
     public void Trigger()
     {
-        print("asd");
         for (int i = 0; i < count; i++)
         {
-            Instantiate(enemyType, transform.position, Quaternion.identity);
+            GameObject enemy = Instantiate(enemyType, transform.position, Quaternion.identity) as GameObject;
+
+            enemy.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1000, 1000), 0));
         }
     }
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
 
 	}
 	

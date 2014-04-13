@@ -58,7 +58,7 @@ public class CrocodileAI : AISimple {
             state = STATE.WALKINGRIGHT;
         }
 
-        transform.position -= bestDirection * Time.deltaTime * 0.1f;
+        transform.position -= bestDirection * Time.deltaTime * speed;
     }
 
     public override void RunAI()
