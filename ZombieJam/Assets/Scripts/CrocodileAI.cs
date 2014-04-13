@@ -11,8 +11,6 @@ public class CrocodileAI : AISimple {
     }
 
     public float changeTarget = 3.0f;
-
-    private float timeWhenChange = 0.0f;
     private Vector3 currentDirection;
 
     private STATE state = STATE.WALKINGLEFT;

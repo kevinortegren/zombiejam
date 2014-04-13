@@ -110,8 +110,6 @@ public class Player : controller {
 	// Update is called once per frame
 	void Update () {
 
-
-
         if (qstate == QUESTIONSTATE.INTRO)
         {
             introTime += Time.deltaTime;
@@ -282,11 +280,7 @@ public class Player : controller {
         {
 		    if(Time.time >= timeWhenFired + weapon.cooldown)
 		    {
-			    // If the controller has an aiming direction.
-			
 				latestAimingDirection = aimVec;
-
-                print(latestAimingDirection);
 
                 weapon.Fire(gameObject, hand.position, new Vector2(latestAimingDirection.x, latestAimingDirection.y));		
 			    timeWhenFired = Time.time;

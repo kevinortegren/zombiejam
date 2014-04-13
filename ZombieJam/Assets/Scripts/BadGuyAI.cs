@@ -12,9 +12,11 @@ public class BadGuyAI : AISimple {
     }
 
     public GameObject activeWeapon;
+    public float shootRange = 10;
 
     private float timeWhenFired = 0.0f;
     private float aiCooldown = 1.0f;
+
 
     private STATE state = STATE.IDLE;
 
@@ -48,30 +50,6 @@ public class BadGuyAI : AISimple {
     {
         base.RunAI();
 
-        bestDirection = Vector3.Normalize(new Vector3(bestDirection.x, bestDirection.y, 0.0f));
-
-        RotateArm();
-
-        Shoot();
-    }
-
-    void RotateArm()
-    {
-        if (bestDirection != Vector3.zero)
-        {
-            float angle = (float)Math.Atan2(-bestDirection.y, -bestDirection.x) * Mathf.Rad2Deg;
-
-            Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
-            currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
-
-            shoulder.rotation = currentAim;
-        }
-    }
-
-    public override void Move()
-    {
-        animation.CrossFade("BadGuyWalking", 0.3f);
-
         // Moving x.
         if (bestDirection.x > 0)
         {
@@ -91,6 +69,40 @@ public class BadGuyAI : AISimple {
 
             state = STATE.WALKINGRIGHT;
         }
+
+        Vector3 unnormalizedDirection = bestDirection;
+
+        bestDirection = Vector3.Normalize(new Vector3(bestDirection.x, bestDirection.y, 0.0f));
+
+        RotateArm();
+
+        if (unnormalizedDirection.magnitude < shootRange)
+        {
+            Shoot();
+        }
+    }
+
+    void RotateArm()
+    {
+        if (bestDirection != Vector3.zero)
+        {
+            float angle = (float)Math.Atan2(-bestDirection.y, -bestDirection.x) * Mathf.Rad2Deg;
+
+            Quaternion newAim = Quaternion.Euler(new Vector3(0, 0, angle));
+            currentAim = Quaternion.Slerp(this.currentAim, newAim, 0.2f);
+
+            shoulder.rotation = currentAim;
+        }
+    }
+
+    public override void Idle()
+    {
+        animation.CrossFade("BadGuyIdle", 0.3f);
+    }
+
+    public override void Move()
+    {
+        animation.CrossFade("BadGuyWalking", 0.3f);
 
         transform.position -= bestDirection * Time.deltaTime * 0.1f;
     }

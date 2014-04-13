@@ -519,8 +519,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100034}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: -15.4398069, y: 2.21724415, z: 0}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 15.2289953, y: 4.05020523, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 400032}
@@ -647,9 +647,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reach: 0
-  guard: 0
+  guard: 1
   speed: .300000012
   activeWeapon: {fileID: 100000, guid: ed4a29681ebbac241b81465c212530ac, type: 2}
+  shootRange: 10
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

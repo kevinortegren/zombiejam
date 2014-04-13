@@ -7,7 +7,9 @@ public class AISimple : MonoBehaviour {
     protected Vector3 bestDirection;
     protected GameObject target;
 
-    public float reach;
+    // Not implemented.
+    public float reach = 0.0f;
+
     public bool guard = false;
     public float speed = 0.1f;
 
@@ -49,15 +51,22 @@ public class AISimple : MonoBehaviour {
 
         target = targetPlayer;
         bestDirection = direction;
-       
-        if(!guard)
 
-        // Call move.
-        Move();
+        if (!guard)
+        {
+
+            // Call move.
+            Move();
+
+        }
+        else
+        {
+            Idle();
+        }
 
     }
 
     public virtual void Move() { }
 
-
+    public virtual void Idle() { }
 }
