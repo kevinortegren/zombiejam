@@ -6,7 +6,8 @@ public class ExitGameButton : Button {
     // Use this for initialization
     void Start()
     {
-
+        Global.playerList.Clear();
+        Global.numberOfPlayers = 0;
     }
 
     // Update is called once per frame
