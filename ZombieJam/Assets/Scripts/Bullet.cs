@@ -14,6 +14,12 @@ public class Bullet : MonoBehaviour {
 	public void Launch(GameObject owner, Vector2 direction)
 	{
         this.owner = owner;
+
+        if (owner.tag == "Player")
+            gameObject.layer = 11;
+        else if (owner.tag == "Enemy")
+            gameObject.layer = 10;
+
 		GetComponent<Rigidbody2D>().AddForce(direction * force);
 	}
 
@@ -35,14 +41,20 @@ public class Bullet : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        //print("Owner: " + owner.tag + " collides with " + other.gameObject.tag);
+  
         // Do not collide with self.
-        if (other.gameObject.tag != owner.tag)
+        if ((other.gameObject.tag != owner.tag) || owner == null)
         {
-            if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "PLayer")
+            if (other.gameObject.tag == "Enemy")
             {
                 other.gameObject.GetComponent<Life>().TakeDamage(damage);
+                owner.GetComponent<Player>().AddScore(2);
             }
-
+            else if (other.gameObject.tag == "Player")
+            {
+                other.gameObject.GetComponent<Player>().AddScore(-10);
+            }
             Destroy(gameObject);
         }
     }

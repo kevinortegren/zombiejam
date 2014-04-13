@@ -19,6 +19,7 @@ public class controller : MonoBehaviour {
 	}
 	
 	public int JoyStickNum = 0;
+    public float moveSpeed = 40;
 
 	protected STATE previousState = STATE.RUNNINGRIGHT;
     protected STATE currentState = STATE.RUNNINGRIGHT;
@@ -29,7 +30,25 @@ public class controller : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+    protected void UpdateQuestionInput()
+    {
+        if (Input.GetButtonDown("LB" + JoyStickNum.ToString()))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.JUMP);
+        }
+
+        if (Input.GetButtonDown("Fire" + JoyStickNum.ToString()))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.FIRE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ProcessQuestionInput(JOYSTICKBUTTON.FIRE);
+        }
+    }
+
 	// Update is called once per frame
 	protected void UpdateInput () {
 
@@ -89,12 +108,43 @@ public class controller : MonoBehaviour {
             ProcessInput(JOYSTICKBUTTON.FIRE);
         }
 
-		transform.position += deltaPos;
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+
+        if (camera.GetComponent<Camera>().diff > 20.0f)
+        {
+            if (gameObject == camera.GetComponent<Camera>().back)
+            {
+                if (deltaPos.x < 0)
+                {
+                    deltaPos.x = 0;
+                }
+            }
+            else if (gameObject == camera.GetComponent<Camera>().front)
+            {
+                if (deltaPos.x > 0)
+                {
+                    deltaPos.x = 0;
+                }
+            }
+        }
+        
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            deltaPos.x += 0.1f;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            deltaPos.x -= 0.1f;
+        }     
+
+		transform.position += deltaPos * Time.deltaTime * moveSpeed;
 
         ProcessState();
 	}
 
 	protected virtual void ProcessInput(JOYSTICKBUTTON button) {}
+    protected virtual void ProcessQuestionInput(JOYSTICKBUTTON button) { }
 
 	protected virtual void ProcessState() {}
 }

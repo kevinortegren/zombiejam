@@ -11,8 +11,6 @@ public class CrocodileAI : AISimple {
     }
 
     public float changeTarget = 3.0f;
-
-    private float timeWhenChange = 0.0f;
     private Vector3 currentDirection;
 
     private STATE state = STATE.WALKINGLEFT;
@@ -30,7 +28,8 @@ public class CrocodileAI : AISimple {
             // Attack Attack!
             animation.CrossFade("AligatorAttacking", 0.3f);
 
-            target.GetComponent<Life>().TakeDamage(0.5f);
+            //target.GetComponent<Life>().TakeDamage(0.5f);
+            target.GetComponent<Player>().AddScore(-1);
         }
         else
         {
@@ -58,7 +57,7 @@ public class CrocodileAI : AISimple {
             state = STATE.WALKINGRIGHT;
         }
 
-        transform.position -= bestDirection * Time.deltaTime * 0.1f;
+        transform.position -= bestDirection * Time.deltaTime * speed;
     }
 
     public override void RunAI()

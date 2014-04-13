@@ -24,8 +24,6 @@ public class PlayerSpawn : MonoBehaviour {
                      GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().target = playerObj.transform;
             }
         }
-
-       
 	}
 	
 	// Update is called once per frame

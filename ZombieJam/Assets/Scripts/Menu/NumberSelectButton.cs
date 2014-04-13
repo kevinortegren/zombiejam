@@ -31,7 +31,7 @@ public class NumberSelectButton : HorizontalButton {
     {
         int currNum = Convert.ToInt32(GetComponent<TextMesh>().text);
         currNum++;
-        if (currNum < 10)
+        if (currNum < 5)
         {
             GetComponent<TextMesh>().text = currNum.ToString();
             Global.numberOfPlayers = currNum;

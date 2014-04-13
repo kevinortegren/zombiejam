@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerSelect.unity
   - enabled: 1
     path: Assets/Scenes/FirstLevelScene.unity
+  - enabled: 1
+    path: Assets/Scenes/gameoverscene.unity

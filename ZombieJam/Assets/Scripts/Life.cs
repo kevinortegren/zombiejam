@@ -4,6 +4,7 @@ using System.Collections;
 public class Life : MonoBehaviour {
 
 	public float health = 100;
+    public GameObject gameObj;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +14,7 @@ public class Life : MonoBehaviour {
     public void TakeDamage(float health)
     {
         this.health -= health;
-        print(gameObject.name + " " + this.health + " hp.");
+        //print(gameObject.name + " " + this.health + " hp.");
         
     }
 
@@ -27,7 +28,10 @@ public class Life : MonoBehaviour {
 
 	public void Die()
 	{
-        print(gameObject.name + " died.");
-        Destroy(gameObject);
+        if (!(gameObject.tag == "Player"))
+        {
+            Instantiate(gameObj, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(gameObject);
+        }
 	}
 }
