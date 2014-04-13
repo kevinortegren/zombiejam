@@ -12,6 +12,7 @@ public class AISimple : MonoBehaviour {
 
     public bool guard = false;
     public float speed = 0.1f;
+	public float shootRange = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -52,7 +53,7 @@ public class AISimple : MonoBehaviour {
         target = targetPlayer;
         bestDirection = direction;
 
-        if (!guard)
+		if (!guard && bestDirection.magnitude < shootRange)
         {
 
             // Call move.

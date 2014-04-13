@@ -12,7 +12,7 @@ public class BadGuyAI : AISimple {
     }
 
     public GameObject activeWeapon;
-    public float shootRange = 10;
+    
 
     private float timeWhenFired = 0.0f;
     private float aiCooldown = 1.0f;
