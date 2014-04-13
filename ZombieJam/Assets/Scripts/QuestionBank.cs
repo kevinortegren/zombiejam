@@ -130,8 +130,57 @@ public class QuestionBank : MonoBehaviour
 		q15.question = "Not a place in lord of the rings?";
 		q15.answer1 = "Minas thorath";
 		q15.answer2 = "Minas Morgul";
-		q15.correctAnswer = 1;
+		q15.correctAnswer = 0;
 		Questions.Add(q15);
+
+		Question q16 = new Question();
+		q16.question = "Max level in WoW vanila?";
+		q16.answer1 = "60";
+		q16.answer2 = "70";
+		q16.correctAnswer = 0;
+		Questions.Add(q16);
+
+		Question q17 = new Question();
+		q17.question = "Have been president of the USA?";
+		q17.answer1 = "John tyler Jacksson";
+		q17.answer2 = "Martin Van Buren";
+		q17.correctAnswer = 1;
+		Questions.Add(q17);
+
+		Question q18 = new Question();
+		q18.question = "Name of very known bug in pokemon?";
+		q18.answer1 = "Ningano";
+		q18.answer2 = "Missingno";
+		q18.correctAnswer = 1;
+		Questions.Add(q18);
+
+		Question q19 = new Question();
+		q19.question = "How many levels are in Mario Bros?";
+		q19.answer1 = "32";
+		q19.answer2 = "26";
+		q19.correctAnswer = 0;
+		Questions.Add(q19);
+
+		Question q20 = new Question();
+		q20.question = "Frodos sword is named?";
+		q20.answer1 = "Narsil";
+		q20.answer2 = "Sting";
+		q20.correctAnswer = 1;
+		Questions.Add(q20);
+
+		Question q21 = new Question();
+		q21.question = "Who is iron man?";
+		q21.answer1 = "Tony Stark";
+		q21.answer2 = "Steve Rogers";
+		q21.correctAnswer = 0;
+		Questions.Add(q21);
+
+		Question q22 = new Question();
+		q22.question = "What does Mario work with";
+		q22.answer1 = "Plumber";
+		q22.answer2 = "Pizza baker";
+		q22.correctAnswer = 0;
+		Questions.Add(q22);
 
         initied = true;   
     }
