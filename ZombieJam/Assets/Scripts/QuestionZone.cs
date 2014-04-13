@@ -158,7 +158,7 @@ public class QuestionZone : MonoBehaviour {
             {
                 fsize += Time.time * 1.8f;
 
-                if (outroTM.fontSize < 600)
+                if (outroTM.fontSize < 400)
                 {
                     outroTM.fontSize = (60 + (int)(fsize));
                 }
@@ -205,12 +205,16 @@ public class QuestionZone : MonoBehaviour {
         if (question.correctAnswer == 0)
         {
             answer1TM.color = Color.green;
+            answer1TM.fontSize = 120;
             answer2TM.color = Color.red;
+            answer2TM.fontSize = 60;
         }
         else
         {
             answer1TM.color = Color.red;
+            answer1TM.fontSize = 60;
             answer2TM.color = Color.green;
+            answer2TM.fontSize = 120;
         }
 
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
